@@ -1,0 +1,6253 @@
+{
+  "failures": [],
+  "important_convention": "Green ratio lemma should be stated using B = transpose(Bourbaki Cartan), i.e. B_ij=(beta_i,beta_j^vee). It fails in non-simply-laced types if the opposite convention is used.",
+  "manuscript_version": "v1.3 full-audit package",
+  "not_tested": [
+    "Cellini-Marietti c_epsilon exact notation bridge",
+    "external referee acceptance",
+    "full OPAC-018 transfer beyond the cited reduction"
+  ],
+  "passed": true,
+  "receipt_level": "full detailed per-type audit",
+  "scope": "A1-A8, B2-B8, C2-C8, D4-D8, E6, E7, E8, F4, G2",
+  "summary": [
+    {
+      "expected_root_count": 2,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1/2",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2"
+          ],
+          "rhs_diag": "1/2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1/2",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2"
+          ],
+          "rhs_diag": "1/2"
+        }
+      ],
+      "highest_root_marks": [
+        1
+      ],
+      "rank": 1,
+      "root_count": 2,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "2",
+          "S": "0",
+          "det_ratio": "2",
+          "node": 0
+        }
+      ],
+      "type": "A1"
+    },
+    {
+      "expected_root_count": 6,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "2/3",
+          "mid_diag_over_mark": "2/3",
+          "node": 0,
+          "ratios": [
+            "2/3",
+            "1/3"
+          ],
+          "rhs_diag": "2/3"
+        },
+        {
+          "lhs_max_ratio": "2/3",
+          "mid_diag_over_mark": "2/3",
+          "node": 1,
+          "ratios": [
+            "1/3",
+            "2/3"
+          ],
+          "rhs_diag": "2/3"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "2/3",
+          "mid_diag_over_mark": "2/3",
+          "node": 0,
+          "ratios": [
+            "2/3",
+            "1/3"
+          ],
+          "rhs_diag": "2/3"
+        },
+        {
+          "lhs_max_ratio": "2/3",
+          "mid_diag_over_mark": "2/3",
+          "node": 1,
+          "ratios": [
+            "1/3",
+            "2/3"
+          ],
+          "rhs_diag": "2/3"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        1
+      ],
+      "rank": 2,
+      "root_count": 6,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "3/2",
+          "S": "1/2",
+          "det_ratio": "3/2",
+          "node": 0
+        },
+        {
+          "2_minus_S": "3/2",
+          "S": "1/2",
+          "det_ratio": "3/2",
+          "node": 1
+        }
+      ],
+      "type": "A2"
+    },
+    {
+      "expected_root_count": 12,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "3/4",
+          "mid_diag_over_mark": "3/4",
+          "node": 0,
+          "ratios": [
+            "3/4",
+            "1/2",
+            "1/4"
+          ],
+          "rhs_diag": "3/4"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "3/4",
+          "mid_diag_over_mark": "3/4",
+          "node": 2,
+          "ratios": [
+            "1/4",
+            "1/2",
+            "3/4"
+          ],
+          "rhs_diag": "3/4"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "3/4",
+          "mid_diag_over_mark": "3/4",
+          "node": 0,
+          "ratios": [
+            "3/4",
+            "1/2",
+            "1/4"
+          ],
+          "rhs_diag": "3/4"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "3/4",
+          "mid_diag_over_mark": "3/4",
+          "node": 2,
+          "ratios": [
+            "1/4",
+            "1/2",
+            "3/4"
+          ],
+          "rhs_diag": "3/4"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        1,
+        1
+      ],
+      "rank": 3,
+      "root_count": 12,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "4/3",
+          "S": "2/3",
+          "det_ratio": "4/3",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 1
+        },
+        {
+          "2_minus_S": "4/3",
+          "S": "2/3",
+          "det_ratio": "4/3",
+          "node": 2
+        }
+      ],
+      "type": "A3"
+    },
+    {
+      "expected_root_count": 20,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "4/5",
+          "mid_diag_over_mark": "4/5",
+          "node": 0,
+          "ratios": [
+            "4/5",
+            "3/5",
+            "2/5",
+            "1/5"
+          ],
+          "rhs_diag": "4/5"
+        },
+        {
+          "lhs_max_ratio": "6/5",
+          "mid_diag_over_mark": "6/5",
+          "node": 1,
+          "ratios": [
+            "3/5",
+            "6/5",
+            "4/5",
+            "2/5"
+          ],
+          "rhs_diag": "6/5"
+        },
+        {
+          "lhs_max_ratio": "6/5",
+          "mid_diag_over_mark": "6/5",
+          "node": 2,
+          "ratios": [
+            "2/5",
+            "4/5",
+            "6/5",
+            "3/5"
+          ],
+          "rhs_diag": "6/5"
+        },
+        {
+          "lhs_max_ratio": "4/5",
+          "mid_diag_over_mark": "4/5",
+          "node": 3,
+          "ratios": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ],
+          "rhs_diag": "4/5"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "4/5",
+          "mid_diag_over_mark": "4/5",
+          "node": 0,
+          "ratios": [
+            "4/5",
+            "3/5",
+            "2/5",
+            "1/5"
+          ],
+          "rhs_diag": "4/5"
+        },
+        {
+          "lhs_max_ratio": "6/5",
+          "mid_diag_over_mark": "6/5",
+          "node": 1,
+          "ratios": [
+            "3/5",
+            "6/5",
+            "4/5",
+            "2/5"
+          ],
+          "rhs_diag": "6/5"
+        },
+        {
+          "lhs_max_ratio": "6/5",
+          "mid_diag_over_mark": "6/5",
+          "node": 2,
+          "ratios": [
+            "2/5",
+            "4/5",
+            "6/5",
+            "3/5"
+          ],
+          "rhs_diag": "6/5"
+        },
+        {
+          "lhs_max_ratio": "4/5",
+          "mid_diag_over_mark": "4/5",
+          "node": 3,
+          "ratios": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ],
+          "rhs_diag": "4/5"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "rank": 4,
+      "root_count": 20,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "5/4",
+          "S": "3/4",
+          "det_ratio": "5/4",
+          "node": 0
+        },
+        {
+          "2_minus_S": "5/6",
+          "S": "7/6",
+          "det_ratio": "5/6",
+          "node": 1
+        },
+        {
+          "2_minus_S": "5/6",
+          "S": "7/6",
+          "det_ratio": "5/6",
+          "node": 2
+        },
+        {
+          "2_minus_S": "5/4",
+          "S": "3/4",
+          "det_ratio": "5/4",
+          "node": 3
+        }
+      ],
+      "type": "A4"
+    },
+    {
+      "expected_root_count": 30,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "5/6",
+          "mid_diag_over_mark": "5/6",
+          "node": 0,
+          "ratios": [
+            "5/6",
+            "2/3",
+            "1/2",
+            "1/3",
+            "1/6"
+          ],
+          "rhs_diag": "5/6"
+        },
+        {
+          "lhs_max_ratio": "4/3",
+          "mid_diag_over_mark": "4/3",
+          "node": 1,
+          "ratios": [
+            "2/3",
+            "4/3",
+            "1",
+            "2/3",
+            "1/3"
+          ],
+          "rhs_diag": "4/3"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "3/2"
+        },
+        {
+          "lhs_max_ratio": "4/3",
+          "mid_diag_over_mark": "4/3",
+          "node": 3,
+          "ratios": [
+            "1/3",
+            "2/3",
+            "1",
+            "4/3",
+            "2/3"
+          ],
+          "rhs_diag": "4/3"
+        },
+        {
+          "lhs_max_ratio": "5/6",
+          "mid_diag_over_mark": "5/6",
+          "node": 4,
+          "ratios": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/3",
+            "5/6"
+          ],
+          "rhs_diag": "5/6"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "5/6",
+          "mid_diag_over_mark": "5/6",
+          "node": 0,
+          "ratios": [
+            "5/6",
+            "2/3",
+            "1/2",
+            "1/3",
+            "1/6"
+          ],
+          "rhs_diag": "5/6"
+        },
+        {
+          "lhs_max_ratio": "4/3",
+          "mid_diag_over_mark": "4/3",
+          "node": 1,
+          "ratios": [
+            "2/3",
+            "4/3",
+            "1",
+            "2/3",
+            "1/3"
+          ],
+          "rhs_diag": "4/3"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "3/2"
+        },
+        {
+          "lhs_max_ratio": "4/3",
+          "mid_diag_over_mark": "4/3",
+          "node": 3,
+          "ratios": [
+            "1/3",
+            "2/3",
+            "1",
+            "4/3",
+            "2/3"
+          ],
+          "rhs_diag": "4/3"
+        },
+        {
+          "lhs_max_ratio": "5/6",
+          "mid_diag_over_mark": "5/6",
+          "node": 4,
+          "ratios": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/3",
+            "5/6"
+          ],
+          "rhs_diag": "5/6"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rank": 5,
+      "root_count": 30,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "6/5",
+          "S": "4/5",
+          "det_ratio": "6/5",
+          "node": 0
+        },
+        {
+          "2_minus_S": "3/4",
+          "S": "5/4",
+          "det_ratio": "3/4",
+          "node": 1
+        },
+        {
+          "2_minus_S": "2/3",
+          "S": "4/3",
+          "det_ratio": "2/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "3/4",
+          "S": "5/4",
+          "det_ratio": "3/4",
+          "node": 3
+        },
+        {
+          "2_minus_S": "6/5",
+          "S": "4/5",
+          "det_ratio": "6/5",
+          "node": 4
+        }
+      ],
+      "type": "A5"
+    },
+    {
+      "expected_root_count": 42,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "6/7",
+          "mid_diag_over_mark": "6/7",
+          "node": 0,
+          "ratios": [
+            "6/7",
+            "5/7",
+            "4/7",
+            "3/7",
+            "2/7",
+            "1/7"
+          ],
+          "rhs_diag": "6/7"
+        },
+        {
+          "lhs_max_ratio": "10/7",
+          "mid_diag_over_mark": "10/7",
+          "node": 1,
+          "ratios": [
+            "5/7",
+            "10/7",
+            "8/7",
+            "6/7",
+            "4/7",
+            "2/7"
+          ],
+          "rhs_diag": "10/7"
+        },
+        {
+          "lhs_max_ratio": "12/7",
+          "mid_diag_over_mark": "12/7",
+          "node": 2,
+          "ratios": [
+            "4/7",
+            "8/7",
+            "12/7",
+            "9/7",
+            "6/7",
+            "3/7"
+          ],
+          "rhs_diag": "12/7"
+        },
+        {
+          "lhs_max_ratio": "12/7",
+          "mid_diag_over_mark": "12/7",
+          "node": 3,
+          "ratios": [
+            "3/7",
+            "6/7",
+            "9/7",
+            "12/7",
+            "8/7",
+            "4/7"
+          ],
+          "rhs_diag": "12/7"
+        },
+        {
+          "lhs_max_ratio": "10/7",
+          "mid_diag_over_mark": "10/7",
+          "node": 4,
+          "ratios": [
+            "2/7",
+            "4/7",
+            "6/7",
+            "8/7",
+            "10/7",
+            "5/7"
+          ],
+          "rhs_diag": "10/7"
+        },
+        {
+          "lhs_max_ratio": "6/7",
+          "mid_diag_over_mark": "6/7",
+          "node": 5,
+          "ratios": [
+            "1/7",
+            "2/7",
+            "3/7",
+            "4/7",
+            "5/7",
+            "6/7"
+          ],
+          "rhs_diag": "6/7"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "6/7",
+          "mid_diag_over_mark": "6/7",
+          "node": 0,
+          "ratios": [
+            "6/7",
+            "5/7",
+            "4/7",
+            "3/7",
+            "2/7",
+            "1/7"
+          ],
+          "rhs_diag": "6/7"
+        },
+        {
+          "lhs_max_ratio": "10/7",
+          "mid_diag_over_mark": "10/7",
+          "node": 1,
+          "ratios": [
+            "5/7",
+            "10/7",
+            "8/7",
+            "6/7",
+            "4/7",
+            "2/7"
+          ],
+          "rhs_diag": "10/7"
+        },
+        {
+          "lhs_max_ratio": "12/7",
+          "mid_diag_over_mark": "12/7",
+          "node": 2,
+          "ratios": [
+            "4/7",
+            "8/7",
+            "12/7",
+            "9/7",
+            "6/7",
+            "3/7"
+          ],
+          "rhs_diag": "12/7"
+        },
+        {
+          "lhs_max_ratio": "12/7",
+          "mid_diag_over_mark": "12/7",
+          "node": 3,
+          "ratios": [
+            "3/7",
+            "6/7",
+            "9/7",
+            "12/7",
+            "8/7",
+            "4/7"
+          ],
+          "rhs_diag": "12/7"
+        },
+        {
+          "lhs_max_ratio": "10/7",
+          "mid_diag_over_mark": "10/7",
+          "node": 4,
+          "ratios": [
+            "2/7",
+            "4/7",
+            "6/7",
+            "8/7",
+            "10/7",
+            "5/7"
+          ],
+          "rhs_diag": "10/7"
+        },
+        {
+          "lhs_max_ratio": "6/7",
+          "mid_diag_over_mark": "6/7",
+          "node": 5,
+          "ratios": [
+            "1/7",
+            "2/7",
+            "3/7",
+            "4/7",
+            "5/7",
+            "6/7"
+          ],
+          "rhs_diag": "6/7"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rank": 6,
+      "root_count": 42,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "7/6",
+          "S": "5/6",
+          "det_ratio": "7/6",
+          "node": 0
+        },
+        {
+          "2_minus_S": "7/10",
+          "S": "13/10",
+          "det_ratio": "7/10",
+          "node": 1
+        },
+        {
+          "2_minus_S": "7/12",
+          "S": "17/12",
+          "det_ratio": "7/12",
+          "node": 2
+        },
+        {
+          "2_minus_S": "7/12",
+          "S": "17/12",
+          "det_ratio": "7/12",
+          "node": 3
+        },
+        {
+          "2_minus_S": "7/10",
+          "S": "13/10",
+          "det_ratio": "7/10",
+          "node": 4
+        },
+        {
+          "2_minus_S": "7/6",
+          "S": "5/6",
+          "det_ratio": "7/6",
+          "node": 5
+        }
+      ],
+      "type": "A6"
+    },
+    {
+      "expected_root_count": 56,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "7/8",
+          "mid_diag_over_mark": "7/8",
+          "node": 0,
+          "ratios": [
+            "7/8",
+            "3/4",
+            "5/8",
+            "1/2",
+            "3/8",
+            "1/4",
+            "1/8"
+          ],
+          "rhs_diag": "7/8"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 1,
+          "ratios": [
+            "3/4",
+            "3/2",
+            "5/4",
+            "1",
+            "3/4",
+            "1/2",
+            "1/4"
+          ],
+          "rhs_diag": "3/2"
+        },
+        {
+          "lhs_max_ratio": "15/8",
+          "mid_diag_over_mark": "15/8",
+          "node": 2,
+          "ratios": [
+            "5/8",
+            "5/4",
+            "15/8",
+            "3/2",
+            "9/8",
+            "3/4",
+            "3/8"
+          ],
+          "rhs_diag": "15/8"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "3/2",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "15/8",
+          "mid_diag_over_mark": "15/8",
+          "node": 4,
+          "ratios": [
+            "3/8",
+            "3/4",
+            "9/8",
+            "3/2",
+            "15/8",
+            "5/4",
+            "5/8"
+          ],
+          "rhs_diag": "15/8"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 5,
+          "ratios": [
+            "1/4",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "3/2",
+            "3/4"
+          ],
+          "rhs_diag": "3/2"
+        },
+        {
+          "lhs_max_ratio": "7/8",
+          "mid_diag_over_mark": "7/8",
+          "node": 6,
+          "ratios": [
+            "1/8",
+            "1/4",
+            "3/8",
+            "1/2",
+            "5/8",
+            "3/4",
+            "7/8"
+          ],
+          "rhs_diag": "7/8"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "7/8",
+          "mid_diag_over_mark": "7/8",
+          "node": 0,
+          "ratios": [
+            "7/8",
+            "3/4",
+            "5/8",
+            "1/2",
+            "3/8",
+            "1/4",
+            "1/8"
+          ],
+          "rhs_diag": "7/8"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 1,
+          "ratios": [
+            "3/4",
+            "3/2",
+            "5/4",
+            "1",
+            "3/4",
+            "1/2",
+            "1/4"
+          ],
+          "rhs_diag": "3/2"
+        },
+        {
+          "lhs_max_ratio": "15/8",
+          "mid_diag_over_mark": "15/8",
+          "node": 2,
+          "ratios": [
+            "5/8",
+            "5/4",
+            "15/8",
+            "3/2",
+            "9/8",
+            "3/4",
+            "3/8"
+          ],
+          "rhs_diag": "15/8"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "3/2",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "15/8",
+          "mid_diag_over_mark": "15/8",
+          "node": 4,
+          "ratios": [
+            "3/8",
+            "3/4",
+            "9/8",
+            "3/2",
+            "15/8",
+            "5/4",
+            "5/8"
+          ],
+          "rhs_diag": "15/8"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 5,
+          "ratios": [
+            "1/4",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "3/2",
+            "3/4"
+          ],
+          "rhs_diag": "3/2"
+        },
+        {
+          "lhs_max_ratio": "7/8",
+          "mid_diag_over_mark": "7/8",
+          "node": 6,
+          "ratios": [
+            "1/8",
+            "1/4",
+            "3/8",
+            "1/2",
+            "5/8",
+            "3/4",
+            "7/8"
+          ],
+          "rhs_diag": "7/8"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rank": 7,
+      "root_count": 56,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "8/7",
+          "S": "6/7",
+          "det_ratio": "8/7",
+          "node": 0
+        },
+        {
+          "2_minus_S": "2/3",
+          "S": "4/3",
+          "det_ratio": "2/3",
+          "node": 1
+        },
+        {
+          "2_minus_S": "8/15",
+          "S": "22/15",
+          "det_ratio": "8/15",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 3
+        },
+        {
+          "2_minus_S": "8/15",
+          "S": "22/15",
+          "det_ratio": "8/15",
+          "node": 4
+        },
+        {
+          "2_minus_S": "2/3",
+          "S": "4/3",
+          "det_ratio": "2/3",
+          "node": 5
+        },
+        {
+          "2_minus_S": "8/7",
+          "S": "6/7",
+          "det_ratio": "8/7",
+          "node": 6
+        }
+      ],
+      "type": "A7"
+    },
+    {
+      "expected_root_count": 72,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "8/9",
+          "mid_diag_over_mark": "8/9",
+          "node": 0,
+          "ratios": [
+            "8/9",
+            "7/9",
+            "2/3",
+            "5/9",
+            "4/9",
+            "1/3",
+            "2/9",
+            "1/9"
+          ],
+          "rhs_diag": "8/9"
+        },
+        {
+          "lhs_max_ratio": "14/9",
+          "mid_diag_over_mark": "14/9",
+          "node": 1,
+          "ratios": [
+            "7/9",
+            "14/9",
+            "4/3",
+            "10/9",
+            "8/9",
+            "2/3",
+            "4/9",
+            "2/9"
+          ],
+          "rhs_diag": "14/9"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 2,
+          "ratios": [
+            "2/3",
+            "4/3",
+            "2",
+            "5/3",
+            "4/3",
+            "1",
+            "2/3",
+            "1/3"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "20/9",
+          "mid_diag_over_mark": "20/9",
+          "node": 3,
+          "ratios": [
+            "5/9",
+            "10/9",
+            "5/3",
+            "20/9",
+            "16/9",
+            "4/3",
+            "8/9",
+            "4/9"
+          ],
+          "rhs_diag": "20/9"
+        },
+        {
+          "lhs_max_ratio": "20/9",
+          "mid_diag_over_mark": "20/9",
+          "node": 4,
+          "ratios": [
+            "4/9",
+            "8/9",
+            "4/3",
+            "16/9",
+            "20/9",
+            "5/3",
+            "10/9",
+            "5/9"
+          ],
+          "rhs_diag": "20/9"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 5,
+          "ratios": [
+            "1/3",
+            "2/3",
+            "1",
+            "4/3",
+            "5/3",
+            "2",
+            "4/3",
+            "2/3"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "14/9",
+          "mid_diag_over_mark": "14/9",
+          "node": 6,
+          "ratios": [
+            "2/9",
+            "4/9",
+            "2/3",
+            "8/9",
+            "10/9",
+            "4/3",
+            "14/9",
+            "7/9"
+          ],
+          "rhs_diag": "14/9"
+        },
+        {
+          "lhs_max_ratio": "8/9",
+          "mid_diag_over_mark": "8/9",
+          "node": 7,
+          "ratios": [
+            "1/9",
+            "2/9",
+            "1/3",
+            "4/9",
+            "5/9",
+            "2/3",
+            "7/9",
+            "8/9"
+          ],
+          "rhs_diag": "8/9"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "8/9",
+          "mid_diag_over_mark": "8/9",
+          "node": 0,
+          "ratios": [
+            "8/9",
+            "7/9",
+            "2/3",
+            "5/9",
+            "4/9",
+            "1/3",
+            "2/9",
+            "1/9"
+          ],
+          "rhs_diag": "8/9"
+        },
+        {
+          "lhs_max_ratio": "14/9",
+          "mid_diag_over_mark": "14/9",
+          "node": 1,
+          "ratios": [
+            "7/9",
+            "14/9",
+            "4/3",
+            "10/9",
+            "8/9",
+            "2/3",
+            "4/9",
+            "2/9"
+          ],
+          "rhs_diag": "14/9"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 2,
+          "ratios": [
+            "2/3",
+            "4/3",
+            "2",
+            "5/3",
+            "4/3",
+            "1",
+            "2/3",
+            "1/3"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "20/9",
+          "mid_diag_over_mark": "20/9",
+          "node": 3,
+          "ratios": [
+            "5/9",
+            "10/9",
+            "5/3",
+            "20/9",
+            "16/9",
+            "4/3",
+            "8/9",
+            "4/9"
+          ],
+          "rhs_diag": "20/9"
+        },
+        {
+          "lhs_max_ratio": "20/9",
+          "mid_diag_over_mark": "20/9",
+          "node": 4,
+          "ratios": [
+            "4/9",
+            "8/9",
+            "4/3",
+            "16/9",
+            "20/9",
+            "5/3",
+            "10/9",
+            "5/9"
+          ],
+          "rhs_diag": "20/9"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 5,
+          "ratios": [
+            "1/3",
+            "2/3",
+            "1",
+            "4/3",
+            "5/3",
+            "2",
+            "4/3",
+            "2/3"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "14/9",
+          "mid_diag_over_mark": "14/9",
+          "node": 6,
+          "ratios": [
+            "2/9",
+            "4/9",
+            "2/3",
+            "8/9",
+            "10/9",
+            "4/3",
+            "14/9",
+            "7/9"
+          ],
+          "rhs_diag": "14/9"
+        },
+        {
+          "lhs_max_ratio": "8/9",
+          "mid_diag_over_mark": "8/9",
+          "node": 7,
+          "ratios": [
+            "1/9",
+            "2/9",
+            "1/3",
+            "4/9",
+            "5/9",
+            "2/3",
+            "7/9",
+            "8/9"
+          ],
+          "rhs_diag": "8/9"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rank": 8,
+      "root_count": 72,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "9/8",
+          "S": "7/8",
+          "det_ratio": "9/8",
+          "node": 0
+        },
+        {
+          "2_minus_S": "9/14",
+          "S": "19/14",
+          "det_ratio": "9/14",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 2
+        },
+        {
+          "2_minus_S": "9/20",
+          "S": "31/20",
+          "det_ratio": "9/20",
+          "node": 3
+        },
+        {
+          "2_minus_S": "9/20",
+          "S": "31/20",
+          "det_ratio": "9/20",
+          "node": 4
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 5
+        },
+        {
+          "2_minus_S": "9/14",
+          "S": "19/14",
+          "det_ratio": "9/14",
+          "node": 6
+        },
+        {
+          "2_minus_S": "9/8",
+          "S": "7/8",
+          "det_ratio": "9/8",
+          "node": 7
+        }
+      ],
+      "type": "A8"
+    },
+    {
+      "expected_root_count": 8,
+      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/4"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1/2",
+          "mid_diag_over_mark": "1/2",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2
+      ],
+      "rank": 2,
+      "root_count": 8,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 1
+        }
+      ],
+      "type": "B2"
+    },
+    {
+      "expected_root_count": 8,
+      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/4",
+            "1"
+          ],
+          "rhs_diag": "1"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1/2",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        }
+      ],
+      "highest_root_marks": [
+        2,
+        1
+      ],
+      "rank": 2,
+      "root_count": 8,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 1
+        }
+      ],
+      "type": "C2"
+    },
+    {
+      "expected_root_count": 18,
+      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/4"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "3/4",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/4"
+          ],
+          "rhs_diag": "3/2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/4",
+          "mid_diag_over_mark": "3/4",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4"
+          ],
+          "rhs_diag": "3/2"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2,
+        2
+      ],
+      "rank": 3,
+      "root_count": 18,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "2/3",
+          "S": "4/3",
+          "det_ratio": "2/3",
+          "node": 2
+        }
+      ],
+      "type": "B3"
+    },
+    {
+      "expected_root_count": 18,
+      "green_ratio_failures_bourbaki_orientation": 2,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/4",
+            "1/2",
+            "3/2"
+          ],
+          "rhs_diag": "3/2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1/2",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2"
+          ],
+          "rhs_diag": "3/2"
+        }
+      ],
+      "highest_root_marks": [
+        2,
+        2,
+        1
+      ],
+      "rank": 3,
+      "root_count": 18,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "2/3",
+          "S": "4/3",
+          "det_ratio": "2/3",
+          "node": 2
+        }
+      ],
+      "type": "C3"
+    },
+    {
+      "expected_root_count": 32,
+      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/4"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/4"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "1",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "1"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "rank": 4,
+      "root_count": 32,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 3
+        }
+      ],
+      "type": "B4"
+    },
+    {
+      "expected_root_count": 32,
+      "green_ratio_failures_bourbaki_orientation": 3,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1/4",
+            "1/2",
+            "3/4",
+            "2"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1/2",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "highest_root_marks": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "rank": 4,
+      "root_count": 32,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 3
+        }
+      ],
+      "type": "C4"
+    },
+    {
+      "expected_root_count": 50,
+      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/4"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/4"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "1"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "5/4",
+          "node": 4,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/4"
+          ],
+          "rhs_diag": "5/2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/4",
+          "mid_diag_over_mark": "5/4",
+          "node": 4,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4"
+          ],
+          "rhs_diag": "5/2"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "rank": 5,
+      "root_count": 50,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 3
+        },
+        {
+          "2_minus_S": "2/5",
+          "S": "8/5",
+          "det_ratio": "2/5",
+          "node": 4
+        }
+      ],
+      "type": "B5"
+    },
+    {
+      "expected_root_count": 50,
+      "green_ratio_failures_bourbaki_orientation": 4,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1",
+            "2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2",
+            "3"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "4",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "4"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1/4",
+            "1/2",
+            "3/4",
+            "1",
+            "5/2"
+          ],
+          "rhs_diag": "5/2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1/2",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2"
+          ],
+          "rhs_diag": "5/2"
+        }
+      ],
+      "highest_root_marks": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "rank": 5,
+      "root_count": 50,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 3
+        },
+        {
+          "2_minus_S": "2/5",
+          "S": "8/5",
+          "det_ratio": "2/5",
+          "node": 4
+        }
+      ],
+      "type": "C5"
+    },
+    {
+      "expected_root_count": 72,
+      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/4"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/4"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "1"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/4"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 5,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 5,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "rank": 6,
+      "root_count": 72,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 3
+        },
+        {
+          "2_minus_S": "1/5",
+          "S": "9/5",
+          "det_ratio": "1/5",
+          "node": 4
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 5
+        }
+      ],
+      "type": "B6"
+    },
+    {
+      "expected_root_count": 72,
+      "green_ratio_failures_bourbaki_orientation": 5,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "4",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "4"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "ratios": [
+            "1/4",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "3"
+          ],
+          "rhs_diag": "3"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1/2",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3"
+          ],
+          "rhs_diag": "3"
+        }
+      ],
+      "highest_root_marks": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "rank": 6,
+      "root_count": 72,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 3
+        },
+        {
+          "2_minus_S": "1/5",
+          "S": "9/5",
+          "det_ratio": "1/5",
+          "node": 4
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 5
+        }
+      ],
+      "type": "C6"
+    },
+    {
+      "expected_root_count": 98,
+      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/4"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/4"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "1"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5/4"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "3/2"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "7/4",
+          "node": 6,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "7/4"
+          ],
+          "rhs_diag": "7/2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5/2"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "3"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "7/4",
+          "mid_diag_over_mark": "7/4",
+          "node": 6,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "3/2",
+            "7/4"
+          ],
+          "rhs_diag": "7/2"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "rank": 7,
+      "root_count": 98,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 3
+        },
+        {
+          "2_minus_S": "1/5",
+          "S": "9/5",
+          "det_ratio": "1/5",
+          "node": 4
+        },
+        {
+          "2_minus_S": "1/6",
+          "S": "11/6",
+          "det_ratio": "1/6",
+          "node": 5
+        },
+        {
+          "2_minus_S": "2/7",
+          "S": "12/7",
+          "det_ratio": "2/7",
+          "node": 6
+        }
+      ],
+      "type": "B7"
+    },
+    {
+      "expected_root_count": 98,
+      "green_ratio_failures_bourbaki_orientation": 6,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "4",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "4"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "6",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "6"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "7/2",
+          "mid_diag_over_mark": "7/2",
+          "node": 6,
+          "ratios": [
+            "1/4",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "3/2",
+            "7/2"
+          ],
+          "rhs_diag": "7/2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1/2",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5/2"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "3"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "7/2",
+          "mid_diag_over_mark": "7/2",
+          "node": 6,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "7/2"
+          ],
+          "rhs_diag": "7/2"
+        }
+      ],
+      "highest_root_marks": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "rank": 7,
+      "root_count": 98,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 3
+        },
+        {
+          "2_minus_S": "1/5",
+          "S": "9/5",
+          "det_ratio": "1/5",
+          "node": 4
+        },
+        {
+          "2_minus_S": "1/6",
+          "S": "11/6",
+          "det_ratio": "1/6",
+          "node": 5
+        },
+        {
+          "2_minus_S": "2/7",
+          "S": "12/7",
+          "det_ratio": "2/7",
+          "node": 6
+        }
+      ],
+      "type": "C7"
+    },
+    {
+      "expected_root_count": 128,
+      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/4"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/4"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "1"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5/2",
+            "5/4"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "3",
+            "3/2"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "7/2",
+          "mid_diag_over_mark": "7/2",
+          "node": 6,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "7/2",
+            "7/4"
+          ],
+          "rhs_diag": "7"
+        },
+        {
+          "lhs_max_ratio": "7/2",
+          "mid_diag_over_mark": "2",
+          "node": 7,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "7/2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5/2",
+            "5/2"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "3",
+            "3"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "7/2",
+          "mid_diag_over_mark": "7/2",
+          "node": 6,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "7/2",
+            "7/2"
+          ],
+          "rhs_diag": "7"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 7,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "3/2",
+            "7/4",
+            "2"
+          ],
+          "rhs_diag": "4"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "rank": 8,
+      "root_count": 128,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 3
+        },
+        {
+          "2_minus_S": "1/5",
+          "S": "9/5",
+          "det_ratio": "1/5",
+          "node": 4
+        },
+        {
+          "2_minus_S": "1/6",
+          "S": "11/6",
+          "det_ratio": "1/6",
+          "node": 5
+        },
+        {
+          "2_minus_S": "1/7",
+          "S": "13/7",
+          "det_ratio": "1/7",
+          "node": 6
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 7
+        }
+      ],
+      "type": "B8"
+    },
+    {
+      "expected_root_count": 128,
+      "green_ratio_failures_bourbaki_orientation": 7,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "4",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "4"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5/2",
+            "5"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "6",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "3",
+            "6"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "7",
+          "mid_diag_over_mark": "7/2",
+          "node": 6,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "7/2",
+            "7"
+          ],
+          "rhs_diag": "7"
+        },
+        {
+          "lhs_max_ratio": "4",
+          "mid_diag_over_mark": "4",
+          "node": 7,
+          "ratios": [
+            "1/4",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "3/2",
+            "7/4",
+            "4"
+          ],
+          "rhs_diag": "4"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1/2",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5/2",
+            "5/2"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "3",
+            "3"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "7/2",
+          "mid_diag_over_mark": "7/2",
+          "node": 6,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "7/2",
+            "7/2"
+          ],
+          "rhs_diag": "7"
+        },
+        {
+          "lhs_max_ratio": "4",
+          "mid_diag_over_mark": "4",
+          "node": 7,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "7/2",
+            "4"
+          ],
+          "rhs_diag": "4"
+        }
+      ],
+      "highest_root_marks": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "rank": 8,
+      "root_count": 128,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 3
+        },
+        {
+          "2_minus_S": "1/5",
+          "S": "9/5",
+          "det_ratio": "1/5",
+          "node": 4
+        },
+        {
+          "2_minus_S": "1/6",
+          "S": "11/6",
+          "det_ratio": "1/6",
+          "node": 5
+        },
+        {
+          "2_minus_S": "1/7",
+          "S": "13/7",
+          "det_ratio": "1/7",
+          "node": 6
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 7
+        }
+      ],
+      "type": "C8"
+    },
+    {
+      "expected_root_count": 24,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 2,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "rank": 4,
+      "root_count": 24,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 3
+        }
+      ],
+      "type": "D4"
+    },
+    {
+      "expected_root_count": 40,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "5/4",
+          "mid_diag_over_mark": "5/4",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "5/4",
+            "3/4"
+          ],
+          "rhs_diag": "5/4"
+        },
+        {
+          "lhs_max_ratio": "5/4",
+          "mid_diag_over_mark": "5/4",
+          "node": 4,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "3/4",
+            "5/4"
+          ],
+          "rhs_diag": "5/4"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "5/4",
+          "mid_diag_over_mark": "5/4",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "5/4",
+            "3/4"
+          ],
+          "rhs_diag": "5/4"
+        },
+        {
+          "lhs_max_ratio": "5/4",
+          "mid_diag_over_mark": "5/4",
+          "node": 4,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "3/4",
+            "5/4"
+          ],
+          "rhs_diag": "5/4"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2,
+        2,
+        1,
+        1
+      ],
+      "rank": 5,
+      "root_count": 40,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "4/5",
+          "S": "6/5",
+          "det_ratio": "4/5",
+          "node": 3
+        },
+        {
+          "2_minus_S": "4/5",
+          "S": "6/5",
+          "det_ratio": "4/5",
+          "node": 4
+        }
+      ],
+      "type": "D5"
+    },
+    {
+      "expected_root_count": 60,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 4,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "3/2",
+            "1"
+          ],
+          "rhs_diag": "3/2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 5,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "1",
+            "3/2"
+          ],
+          "rhs_diag": "3/2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 4,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "3/2",
+            "1"
+          ],
+          "rhs_diag": "3/2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 5,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "1",
+            "3/2"
+          ],
+          "rhs_diag": "3/2"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "rank": 6,
+      "root_count": 60,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 3
+        },
+        {
+          "2_minus_S": "2/3",
+          "S": "4/3",
+          "det_ratio": "2/3",
+          "node": 4
+        },
+        {
+          "2_minus_S": "2/3",
+          "S": "4/3",
+          "det_ratio": "2/3",
+          "node": 5
+        }
+      ],
+      "type": "D6"
+    },
+    {
+      "expected_root_count": 84,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5/2"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "7/4",
+          "mid_diag_over_mark": "7/4",
+          "node": 5,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "7/4",
+            "5/4"
+          ],
+          "rhs_diag": "7/4"
+        },
+        {
+          "lhs_max_ratio": "7/4",
+          "mid_diag_over_mark": "7/4",
+          "node": 6,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "5/4",
+            "7/4"
+          ],
+          "rhs_diag": "7/4"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5/2"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "7/4",
+          "mid_diag_over_mark": "7/4",
+          "node": 5,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "7/4",
+            "5/4"
+          ],
+          "rhs_diag": "7/4"
+        },
+        {
+          "lhs_max_ratio": "7/4",
+          "mid_diag_over_mark": "7/4",
+          "node": 6,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "5/4",
+            "7/4"
+          ],
+          "rhs_diag": "7/4"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "rank": 7,
+      "root_count": 84,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 3
+        },
+        {
+          "2_minus_S": "1/5",
+          "S": "9/5",
+          "det_ratio": "1/5",
+          "node": 4
+        },
+        {
+          "2_minus_S": "4/7",
+          "S": "10/7",
+          "det_ratio": "4/7",
+          "node": 5
+        },
+        {
+          "2_minus_S": "4/7",
+          "S": "10/7",
+          "det_ratio": "4/7",
+          "node": 6
+        }
+      ],
+      "type": "D7"
+    },
+    {
+      "expected_root_count": 112,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5/2",
+            "5/2"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "3",
+            "3"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 6,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "3/2",
+            "2",
+            "3/2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 7,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "3/2",
+            "3/2",
+            "2"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5/2",
+            "5/2"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "3",
+            "3"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 6,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "3/2",
+            "2",
+            "3/2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 7,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "3/4",
+            "1",
+            "5/4",
+            "3/2",
+            "3/2",
+            "2"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "rank": 8,
+      "root_count": 112,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1",
+          "S": "1",
+          "det_ratio": "1",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/3",
+          "S": "5/3",
+          "det_ratio": "1/3",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 3
+        },
+        {
+          "2_minus_S": "1/5",
+          "S": "9/5",
+          "det_ratio": "1/5",
+          "node": 4
+        },
+        {
+          "2_minus_S": "1/6",
+          "S": "11/6",
+          "det_ratio": "1/6",
+          "node": 5
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 6
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 7
+        }
+      ],
+      "type": "D8"
+    },
+    {
+      "expected_root_count": 72,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "4/3",
+          "mid_diag_over_mark": "4/3",
+          "node": 0,
+          "ratios": [
+            "4/3",
+            "5/6",
+            "2/3",
+            "2/3",
+            "2/3",
+            "1/2"
+          ],
+          "rhs_diag": "4/3"
+        },
+        {
+          "lhs_max_ratio": "5/3",
+          "mid_diag_over_mark": "5/3",
+          "node": 1,
+          "ratios": [
+            "5/3",
+            "5/3",
+            "4/3",
+            "4/3",
+            "4/3",
+            "1"
+          ],
+          "rhs_diag": "10/3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 2,
+          "ratios": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "3/2"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "5/3",
+          "mid_diag_over_mark": "5/3",
+          "node": 3,
+          "ratios": [
+            "4/3",
+            "4/3",
+            "4/3",
+            "5/3",
+            "5/3",
+            "1"
+          ],
+          "rhs_diag": "10/3"
+        },
+        {
+          "lhs_max_ratio": "4/3",
+          "mid_diag_over_mark": "4/3",
+          "node": 4,
+          "ratios": [
+            "2/3",
+            "2/3",
+            "2/3",
+            "5/6",
+            "4/3",
+            "1/2"
+          ],
+          "rhs_diag": "4/3"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 5,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "4/3",
+          "mid_diag_over_mark": "4/3",
+          "node": 0,
+          "ratios": [
+            "4/3",
+            "5/6",
+            "2/3",
+            "2/3",
+            "2/3",
+            "1/2"
+          ],
+          "rhs_diag": "4/3"
+        },
+        {
+          "lhs_max_ratio": "5/3",
+          "mid_diag_over_mark": "5/3",
+          "node": 1,
+          "ratios": [
+            "5/3",
+            "5/3",
+            "4/3",
+            "4/3",
+            "4/3",
+            "1"
+          ],
+          "rhs_diag": "10/3"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 2,
+          "ratios": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "3/2"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "5/3",
+          "mid_diag_over_mark": "5/3",
+          "node": 3,
+          "ratios": [
+            "4/3",
+            "4/3",
+            "4/3",
+            "5/3",
+            "5/3",
+            "1"
+          ],
+          "rhs_diag": "10/3"
+        },
+        {
+          "lhs_max_ratio": "4/3",
+          "mid_diag_over_mark": "4/3",
+          "node": 4,
+          "ratios": [
+            "2/3",
+            "2/3",
+            "2/3",
+            "5/6",
+            "4/3",
+            "1/2"
+          ],
+          "rhs_diag": "4/3"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 5,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "highest_root_marks": [
+        1,
+        2,
+        3,
+        2,
+        1,
+        2
+      ],
+      "rank": 6,
+      "root_count": 72,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "3/4",
+          "S": "5/4",
+          "det_ratio": "3/4",
+          "node": 0
+        },
+        {
+          "2_minus_S": "3/10",
+          "S": "17/10",
+          "det_ratio": "3/10",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/6",
+          "S": "11/6",
+          "det_ratio": "1/6",
+          "node": 2
+        },
+        {
+          "2_minus_S": "3/10",
+          "S": "17/10",
+          "det_ratio": "3/10",
+          "node": 3
+        },
+        {
+          "2_minus_S": "3/4",
+          "S": "5/4",
+          "det_ratio": "3/4",
+          "node": 4
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 5
+        }
+      ],
+      "type": "E6"
+    },
+    {
+      "expected_root_count": 126,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 1,
+          "ratios": [
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 2,
+          "ratios": [
+            "2",
+            "8/3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "3"
+          ],
+          "rhs_diag": "12"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 3,
+          "ratios": [
+            "3/2",
+            "2",
+            "9/4",
+            "5/2",
+            "5/2",
+            "5/2",
+            "9/4"
+          ],
+          "rhs_diag": "15/2"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 4,
+          "ratios": [
+            "1",
+            "4/3",
+            "3/2",
+            "5/3",
+            "2",
+            "2",
+            "3/2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 5,
+          "ratios": [
+            "1/2",
+            "2/3",
+            "3/4",
+            "5/6",
+            "1",
+            "3/2",
+            "3/4"
+          ],
+          "rhs_diag": "3/2"
+        },
+        {
+          "lhs_max_ratio": "7/4",
+          "mid_diag_over_mark": "7/4",
+          "node": 6,
+          "ratios": [
+            "1",
+            "4/3",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "7/4"
+          ],
+          "rhs_diag": "7/2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 1,
+          "ratios": [
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 2,
+          "ratios": [
+            "2",
+            "8/3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "3"
+          ],
+          "rhs_diag": "12"
+        },
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "5/2",
+          "node": 3,
+          "ratios": [
+            "3/2",
+            "2",
+            "9/4",
+            "5/2",
+            "5/2",
+            "5/2",
+            "9/4"
+          ],
+          "rhs_diag": "15/2"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 4,
+          "ratios": [
+            "1",
+            "4/3",
+            "3/2",
+            "5/3",
+            "2",
+            "2",
+            "3/2"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 5,
+          "ratios": [
+            "1/2",
+            "2/3",
+            "3/4",
+            "5/6",
+            "1",
+            "3/2",
+            "3/4"
+          ],
+          "rhs_diag": "3/2"
+        },
+        {
+          "lhs_max_ratio": "7/4",
+          "mid_diag_over_mark": "7/4",
+          "node": 6,
+          "ratios": [
+            "1",
+            "4/3",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "7/4"
+          ],
+          "rhs_diag": "7/2"
+        }
+      ],
+      "highest_root_marks": [
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "rank": 7,
+      "root_count": 126,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/6",
+          "S": "11/6",
+          "det_ratio": "1/6",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/12",
+          "S": "23/12",
+          "det_ratio": "1/12",
+          "node": 2
+        },
+        {
+          "2_minus_S": "2/15",
+          "S": "28/15",
+          "det_ratio": "2/15",
+          "node": 3
+        },
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 4
+        },
+        {
+          "2_minus_S": "2/3",
+          "S": "4/3",
+          "det_ratio": "2/3",
+          "node": 5
+        },
+        {
+          "2_minus_S": "2/7",
+          "S": "12/7",
+          "det_ratio": "2/7",
+          "node": 6
+        }
+      ],
+      "type": "E7"
+    },
+    {
+      "expected_root_count": 240,
+      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 0,
+          "ratios": [
+            "2",
+            "7/4",
+            "5/3",
+            "8/5",
+            "3/2",
+            "4/3",
+            "1",
+            "5/3"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "7/2",
+          "mid_diag_over_mark": "7/2",
+          "node": 1,
+          "ratios": [
+            "7/2",
+            "7/2",
+            "10/3",
+            "16/5",
+            "3",
+            "8/3",
+            "2",
+            "10/3"
+          ],
+          "rhs_diag": "14"
+        },
+        {
+          "lhs_max_ratio": "5",
+          "mid_diag_over_mark": "5",
+          "node": 2,
+          "ratios": [
+            "5",
+            "5",
+            "5",
+            "24/5",
+            "9/2",
+            "4",
+            "3",
+            "5"
+          ],
+          "rhs_diag": "30"
+        },
+        {
+          "lhs_max_ratio": "4",
+          "mid_diag_over_mark": "4",
+          "node": 3,
+          "ratios": [
+            "4",
+            "4",
+            "4",
+            "4",
+            "15/4",
+            "10/3",
+            "5/2",
+            "4"
+          ],
+          "rhs_diag": "20"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 4,
+          "ratios": [
+            "3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "8/3",
+            "2",
+            "3"
+          ],
+          "rhs_diag": "12"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 5,
+          "ratios": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "3/2",
+            "2"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 6,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "8/3",
+          "mid_diag_over_mark": "8/3",
+          "node": 7,
+          "ratios": [
+            "5/2",
+            "5/2",
+            "5/2",
+            "12/5",
+            "9/4",
+            "2",
+            "3/2",
+            "8/3"
+          ],
+          "rhs_diag": "8"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 0,
+          "ratios": [
+            "2",
+            "7/4",
+            "5/3",
+            "8/5",
+            "3/2",
+            "4/3",
+            "1",
+            "5/3"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "7/2",
+          "mid_diag_over_mark": "7/2",
+          "node": 1,
+          "ratios": [
+            "7/2",
+            "7/2",
+            "10/3",
+            "16/5",
+            "3",
+            "8/3",
+            "2",
+            "10/3"
+          ],
+          "rhs_diag": "14"
+        },
+        {
+          "lhs_max_ratio": "5",
+          "mid_diag_over_mark": "5",
+          "node": 2,
+          "ratios": [
+            "5",
+            "5",
+            "5",
+            "24/5",
+            "9/2",
+            "4",
+            "3",
+            "5"
+          ],
+          "rhs_diag": "30"
+        },
+        {
+          "lhs_max_ratio": "4",
+          "mid_diag_over_mark": "4",
+          "node": 3,
+          "ratios": [
+            "4",
+            "4",
+            "4",
+            "4",
+            "15/4",
+            "10/3",
+            "5/2",
+            "4"
+          ],
+          "rhs_diag": "20"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3",
+          "node": 4,
+          "ratios": [
+            "3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "8/3",
+            "2",
+            "3"
+          ],
+          "rhs_diag": "12"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 5,
+          "ratios": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "3/2",
+            "2"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 6,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "8/3",
+          "mid_diag_over_mark": "8/3",
+          "node": 7,
+          "ratios": [
+            "5/2",
+            "5/2",
+            "5/2",
+            "12/5",
+            "9/4",
+            "2",
+            "3/2",
+            "8/3"
+          ],
+          "rhs_diag": "8"
+        }
+      ],
+      "highest_root_marks": [
+        2,
+        4,
+        6,
+        5,
+        4,
+        3,
+        2,
+        3
+      ],
+      "rank": 8,
+      "root_count": 240,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1/4",
+          "S": "7/4",
+          "det_ratio": "1/4",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/14",
+          "S": "27/14",
+          "det_ratio": "1/14",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/30",
+          "S": "59/30",
+          "det_ratio": "1/30",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/20",
+          "S": "39/20",
+          "det_ratio": "1/20",
+          "node": 3
+        },
+        {
+          "2_minus_S": "1/12",
+          "S": "23/12",
+          "det_ratio": "1/12",
+          "node": 4
+        },
+        {
+          "2_minus_S": "1/6",
+          "S": "11/6",
+          "det_ratio": "1/6",
+          "node": 5
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 6
+        },
+        {
+          "2_minus_S": "1/8",
+          "S": "15/8",
+          "det_ratio": "1/8",
+          "node": 7
+        }
+      ],
+      "type": "E8"
+    },
+    {
+      "expected_root_count": 48,
+      "green_ratio_failures_bourbaki_orientation": 2,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "4/3",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "3/4",
+            "4/3",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "8/3",
+          "mid_diag_over_mark": "3/2",
+          "node": 1,
+          "ratios": [
+            "3/2",
+            "3/2",
+            "8/3",
+            "2"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 2,
+          "ratios": [
+            "1",
+            "1",
+            "2",
+            "3/2"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 3,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "3/4",
+            "2/3",
+            "1/2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 1,
+          "ratios": [
+            "3/2",
+            "3/2",
+            "4/3",
+            "1"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "2",
+          "node": 2,
+          "ratios": [
+            "2",
+            "2",
+            "2",
+            "3/2"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 3,
+          "ratios": [
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "highest_root_marks": [
+        2,
+        4,
+        3,
+        2
+      ],
+      "rank": 4,
+      "root_count": 48,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/6",
+          "S": "11/6",
+          "det_ratio": "1/6",
+          "node": 1
+        },
+        {
+          "2_minus_S": "1/6",
+          "S": "11/6",
+          "det_ratio": "1/6",
+          "node": 2
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 3
+        }
+      ],
+      "type": "F4"
+    },
+    {
+      "expected_root_count": 12,
+      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1/3"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "2/3",
+          "node": 1,
+          "ratios": [
+            "3/2",
+            "2/3"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "green_ratio_values_proof_convention": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "ratios": [
+            "1",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "2/3",
+          "mid_diag_over_mark": "2/3",
+          "node": 1,
+          "ratios": [
+            "1/2",
+            "2/3"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "highest_root_marks": [
+        2,
+        3
+      ],
+      "rank": 2,
+      "root_count": 12,
+      "schur_failures_proof_convention": [],
+      "schur_values_proof_convention": [
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 0
+        },
+        {
+          "2_minus_S": "1/2",
+          "S": "3/2",
+          "det_ratio": "1/2",
+          "node": 1
+        }
+      ],
+      "type": "G2"
+    }
+  ],
+  "tested_claims": [
+    "root counts match expected finite root systems",
+    "Green ratio maximum lemma in proof Cartan convention",
+    "Schur complement bound a^T B^-1 b < 2 for every deleted node"
+  ],
+  "total_types": 32,
+  "truth_label": "FINITE_CARTAN_EXACT_SAGE_TEST"
+}

@@ -1,0 +1,935 @@
+\documentclass[11pt]{book}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric,fit}
+
+\hypersetup{colorlinks=true,linkcolor=blue!50!black,citecolor=green!40!black,urlcolor=blue!60!black}
+\setlist[itemize]{topsep=2pt,itemsep=2pt}
+\setlist[enumerate]{topsep=2pt,itemsep=2pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{The Green--Schur Bridge for OPAC-018}
+\rhead{Shawn Calvin Snelling}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\headheight}{14pt}
+
+\definecolor{axzblue}{RGB}{9,38,72}
+\definecolor{axzgold}{RGB}{184,135,39}
+\definecolor{axzgreen}{RGB}{20,110,70}
+\definecolor{lightgreen}{RGB}{232,248,238}
+\definecolor{lightgold}{RGB}{255,247,225}
+\definecolor{lightblue}{RGB}{236,244,252}
+
+\titleformat{\chapter}[display]
+  {\normalfont\Huge\bfseries\color{axzblue}}
+  {\chaptertitlename\ \thechapter}{14pt}{\Huge}
+\titleformat{\section}{\normalfont\Large\bfseries\color{axzgreen}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{axzblue}}{\thesubsection}{1em}{}
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{checkpoint}[theorem]{Referee checkpoint}
+
+\newcommand{\PhiR}{\Phi}
+\newcommand{\PiS}{\Pi}
+\newcommand{\Conv}{\operatorname{ConvHull}}
+\newcommand{\kappaPU}{\kappa(\Phi,U)}
+\newcommand{\PU}{P_U}
+\newcommand{\PPhi}{P_\Phi}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\dual}[1]{#1^{\vee}}
+\newcommand{\omegacheck}{\check{\omega}}
+\newcommand{\GS}{Green--Schur}
+
+\lstdefinestyle{sage}{
+  basicstyle=\ttfamily\scriptsize,
+  breaklines=true,
+  columns=fullflexible,
+  frame=single,
+  rulecolor=\color{black!40},
+  backgroundcolor=\color{black!3},
+  keywordstyle=\color{blue!60!black},
+  commentstyle=\color{green!40!black},
+  showstringspaces=false
+}
+
+\newcommand{\truthbox}[1]{\begin{center}\fcolorbox{axzgreen}{lightgreen}{\begin{minipage}{0.92\textwidth}\textbf{Truth boundary.} #1\end{minipage}}\end{center}}
+\newcommand{\statusbox}[1]{\begin{center}\fcolorbox{axzgold}{lightgold}{\begin{minipage}{0.92\textwidth}#1\end{minipage}}\end{center}}
+
+\begin{document}
+\frontmatter
+\begin{titlepage}
+\centering
+\vspace*{1cm}
+{\Huge\bfseries\color{axzblue} THE GREEN--SCHUR BRIDGE\\[6pt] FOR OPAC-018\par}
+\vspace{0.8cm}
+{\Large\bfseries\color{axzgold} A Classification-Free Cartan--Schur Proof Candidate\\ of the Root Polytope Projection Bound\par}
+\vspace{1cm}
+\begin{tikzpicture}[node distance=1.3cm]
+\node[draw=axzblue,thick,rounded corners,fill=lightblue,minimum width=12cm,align=center] (opac) {\textbf{OPAC target}\\ $\pi_U(\Conv(\Phi))\subseteq \kappa\,\Conv(\Phi\cap U)$\\ Goal: $\kappa(\Phi,U)<2$};
+\node[draw=axzgreen,thick,rounded corners,fill=lightgreen,minimum width=12cm,below=of opac,align=center] (green) {\textbf{Green ratio bridge}\\ $c_\varepsilon\le G_{\varepsilon\varepsilon}$\\ highest-root dominance + $M$-matrix inverse positivity};
+\node[draw=axzgold,thick,rounded corners,fill=lightgold,minimum width=12cm,below=of green,align=center] (schur) {\textbf{Schur complement}\\ $\det C=\det B(2-a^T B^{-1}b)$\\ $\det C,\det B>0\Rightarrow a^T B^{-1}b<2$};
+\draw[-{Latex[length=3mm]},thick] (opac) -- (green);
+\draw[-{Latex[length=3mm]},thick] (green) -- (schur);
+\end{tikzpicture}\par
+\vspace{0.9cm}
+{\Large\bfseries Shawn Calvin Snelling\par}
+\vspace{0.25cm}
+{\large Axezent AI Research Lab\par}
+\vfill
+{\large Complete Referee Edition v1.3 Full-Audit Package -- June 2026\par}
+\vspace{0.4cm}
+\statusbox{\textbf{Public status:} complete OPAC-018 solution candidate manuscript; exact-arithmetic audit passed; independent referee review pending.}
+\end{titlepage}
+
+\chapter*{Revision Certificate: What v1.3 Completes}
+\addcontentsline{toc}{chapter}{Revision Certificate: What v1.3 Completes}
+This edition is a cleaned and integrated referee package. It fixes the issues that could distract a referee before they reach the mathematical core and adds the full detailed per-type audit receipt required for repository review.
+
+\begin{longtable}{p{0.33\textwidth}p{0.57\textwidth}}
+\toprule
+\textbf{Item} & \textbf{v1.3 correction}\\
+\midrule
+Author line & Uses \textbf{Shawn Calvin Snelling} only. No title prefix is used anywhere in the manuscript or repository package.\\
+Opening pages & Removes the separate plain-text addendum style and integrates the transfer theorem, $E_\varepsilon$ convention, reducible reduction, and $M$-matrix facts into the main LaTeX body.\\
+Math typography & Replaces plain strings such as \texttt{r\_alpha}, \texttt{kappa(Phi,U)}, and \texttt{E\_epsilon} with mathematical notation such as $r_\alpha$, $\kappa(\Phi,U)$, and $E_\varepsilon$.\\
+Cellini--Marietti transfer & States the transfer layer as a clearly marked imported reduction framework, with referee checkpoints for notation alignment.\\
+Symmetrizability & Uses positive determinants of symmetrizable finite-type Cartan matrices rather than incorrectly calling nonsymmetric Cartan matrices positive definite.\\
+Edge handling & Uses the robust inequality $\sum_\varepsilon a_\varepsilon b_\varepsilon G_{\varepsilon\varepsilon}\le a^T B^{-1}b$ so hidden off-diagonal support cannot be challenged.\\
+Repository verification & Adds a manifest verifier that actually compares hashes against \texttt{receipts/SHA256SUMS.txt}.\\
+Full audit JSON & Replaces the short Sage summary receipt with a detailed per-type JSON file containing all tested systems, highest-root marks, Green-ratio values, Schur complement values, and failure lists.\\
+Truth boundary & Keeps public wording at solution candidate / external review pending until independent review occurs.\\
+\bottomrule
+\end{longtable}
+
+\truthbox{This book is written as a complete solution candidate manuscript with exact-arithmetic audit assets. It does not claim external peer-review acceptance, historical recognition, or results unrelated to OPAC-018.}
+
+\chapter*{Claims and Nonclaims}
+\addcontentsline{toc}{chapter}{Claims and Nonclaims}
+\section*{Explicit claims}
+This manuscript presents a classification-free \GS{} proof candidate for the OPAC-018 root-polytope projection bound. The central theorem proves the local inequality
+\[
+ r_\alpha<2,
+\]
+and, through the Cellini--Marietti reduction framework, obtains
+\[
+ \kappa(\Phi,U)<2.
+\]
+The package includes exact Sage audit assets that check Cartan conventions, highest-root marks, the Green ratio inequality, and Schur complement computations over a finite-type audit suite.
+
+\section*{Nonclaims}
+This manuscript does not claim to solve P vs NP, the Riemann Hypothesis, any Millennium Prize Problem, or the Traveling Salesman Problem. It does not claim external peer-review acceptance. The correct public status is: complete solution candidate manuscript, exact-audited, and ready for independent referee review.
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+We prove a classification-free Cartan--Schur inequality that replaces the case-by-case final comparison in the known root-polytope projection framework. Let $\Phi$ be a finite crystallographic root system, let $U$ be a $\Phi$-subspace, and define
+\[
+ \kappa(\Phi,U)=\inf\{\kappa\ge 1: \pi_U(\Conv(\Phi))\subseteq \kappa\Conv(\Phi\cap U)\}.
+\]
+OPAC-018 asks for a uniform proof that $\kappa(\Phi,U)<2$. Using highest-root dominance, inverse-Cartan positivity for finite-type $M$-matrices, a Green ratio maximum lemma, and the Schur complement of a Cartan block, we prove the local bound $r_\alpha<2$. Together with the Cellini--Marietti reduction framework, this yields the desired projection inequality. The logical core is type-free. An exact Sage harness is included only as an arithmetic audit of conventions and finite-type sanity checks.
+
+\tableofcontents
+\listoffigures
+
+\mainmatter
+\part{The OPAC-018 Problem}
+
+\chapter{Root Polytopes and Projection Dilations}
+Let $\Phi$ be a finite crystallographic root system in a real Euclidean vector space $V$ with inner product $(\cdot,\cdot)$. The root polytope is
+\[
+ P_\Phi=\Conv(\Phi).
+\]
+Let $U\subseteq V$ be a nonzero $\Phi$-subspace, meaning that $\Phi\cap U$ spans $U$. Define
+\[
+ P_U=\Conv(\Phi\cap U),
+\]
+and let $\pi_U:V\to U$ denote orthogonal projection. OPAC-018 uses the dilation constant
+\[
+ \kappa(\Phi,U)=\inf\{\kappa\ge 1:\pi_U(P_\Phi)\subseteq \kappa P_U\}.
+\]
+The target is the strict uniform bound
+\[
+ \boxed{\kappa(\Phi,U)<2.}
+\]
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=0.92,>=Latex]
+\draw[fill=blue!10,draw=blue!60,thick] (0,0) -- (1,1.6) -- (2.2,1.1) -- (2.5,-0.2) -- (1.2,-1.1) -- (-0.2,-0.8) -- cycle;
+\foreach \p in {(0,0),(1,1.6),(2.2,1.1),(2.5,-0.2),(1.2,-1.1),(-0.2,-0.8),(1.1,0.2)} \fill[blue!70] \p circle (2pt);
+\node at (1.1,-1.55) {$P_\Phi=\Conv(\Phi)$};
+\draw[->,thick,axzgreen] (3.2,0.1) -- (5.0,0.1) node[midway,above] {$\pi_U$};
+\draw[fill=green!10,draw=green!60!black,thick] (5.6,-0.6) -- (8.2,-0.1) -- (8.7,1.1) -- (6.1,0.6) -- cycle;
+\foreach \p in {(6.0,-0.1),(6.6,0.25),(7.3,0.15),(7.9,0.55)} \fill[green!60!black] \p circle (2pt);
+\node[draw=axzgreen,rounded corners,fill=lightgreen] at (7.0,-1.25) {$\pi_U(P_\Phi)\subseteq \kappa P_U$};
+\node at (7.0,1.65) {Target: $\kappa(\Phi,U)<2$};
+\end{tikzpicture}
+\caption{Root polytope projection and the dilation constant $\kappa(\Phi,U)$.}
+\end{figure}
+
+\begin{remark}[Source of the problem]
+The OPAC problem statement defines $\kappa(\Phi,U)$ by containment and asks for a uniform proof of the strict bound $<2$ without relying on the classification of root systems \cite{opac018}.
+\end{remark}
+
+\chapter{Correcting the Gauge}
+A common false path is to replace the OPAC invariant with a diameter, minimum width, or other global size statistic. The OPAC constant is instead a containment or gauge invariant. For a root $\alpha\in\Phi$, define the Minkowski gauge of its projection with respect to $P_U$ by
+\[
+ \|\pi_U(\alpha)\|_{P_U}=\inf\{t\ge0:\pi_U(\alpha)\in tP_U\}.
+\]
+Since projection commutes with convex hull,
+\[
+ \pi_U(P_\Phi)=\Conv(\pi_U(\Phi)),
+\]
+and therefore
+\[
+ \kappa(\Phi,U)=\max_{\alpha\in\Phi}\|\pi_U(\alpha)\|_{P_U}.
+\]
+Thus the proof target is not a metric comparison of diameters but a root-by-root containment bound.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=Latex,node distance=2cm]
+\node[draw=red!60,thick,circle,minimum size=2.2cm,fill=red!7] (wrong) {};
+\draw[red!60,thick] ($(wrong.center)+(-0.8,0)$) -- ($(wrong.center)+(0.8,0)$);
+\node[below=0.8cm of wrong] {diameter/width};
+\node[draw=green!60!black,thick,diamond,minimum size=2.4cm,fill=green!7,right=5cm of wrong] (right) {};
+\draw[->,green!60!black,thick] ($(right.center)+(-0.5,-0.1)$) -- ($(right.center)+(0.9,0.4)$);
+\node[below=0.8cm of right] {containment gauge};
+\draw[->,thick] (wrong) -- node[above]{replace} (right);
+\end{tikzpicture}
+\caption{The correct OPAC quantity is the containment gauge, not diameter or width.}
+\end{figure}
+
+\chapter{OPAC-018 as a Projection Problem}
+The desired inequality may be restated as follows.
+\begin{theorem}[Projection containment form]
+For every finite crystallographic root system $\Phi$ and every nonzero $\Phi$-subspace $U$,
+\[
+ \pi_U(\Conv(\Phi))\subseteq \kappa\Conv(\Phi\cap U)
+\]
+for some $\kappa<2$.
+\end{theorem}
+The proof below proceeds through local constants coming from codimension-one reductions. The contribution of this manuscript is the replacement of the terminal case-by-case comparison by a uniform Cartan-matrix inequality.
+
+\part{The Cellini--Marietti Reduction Layer}
+
+\chapter{Codimension-One Reduction}
+Cellini and Marietti studied root systems, affine subspaces, and projections, including results related to the Hopkins--Postnikov projection problem \cite{cellini_marietti}. We use their reduction framework as the bridge from root-polytope geometry to Cartan arithmetic.
+
+Fix a simple root system $\Pi$ for $\Phi$ and let $\alpha\in\Pi$. Let
+\[
+ \Phi_\alpha=\Phi\langle\Pi\setminus\{\alpha\}\rangle
+\]
+be the parabolic subsystem generated after deleting $\alpha$. The reduction identifies a local constant $r_\alpha$ whose strict bound implies the desired projection bound.
+\begin{definition}[Reduction target]
+The local target is
+\[
+ \boxed{r_\alpha<2}
+\]
+for every simple root $\alpha$ appearing in the reduction.
+\end{definition}
+
+\begin{theorem}[Cellini--Marietti transfer, referee form]\label{thm:transfer}
+Let $\Phi$ be a finite crystallographic root system and let $U$ be a nonzero $\Phi$-subspace. In the Cellini--Marietti projection framework, the OPAC containment estimate $\kappa(\Phi,U)<2$ follows once the local codimension-one constants $r_\alpha$ satisfy $r_\alpha<2$ uniformly for the simple roots occurring in the reduction.
+\end{theorem}
+
+\begin{proof}[Proof role]
+This theorem is not introduced as a new unsupported geometric reduction. It is the named transfer layer imported from the cited Cellini--Marietti framework. The new contribution of this manuscript is the classification-free proof of the required local inequality $r_\alpha<2$, replacing the terminal case comparison. A referee should verify the exact notation match against the cited source, especially the projection and local-constant definitions.
+\end{proof}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=Latex]
+\foreach \x in {0,1.3,2.6,3.9,5.2} {\node[circle,draw=blue!70,thick,minimum size=0.45cm] (n\x) at (\x,0) {};}
+\draw[thick] (0,0)--(1.3,0)--(2.6,0)--(3.9,0)--(5.2,0);
+\node[circle,draw=red!70,fill=red!30,thick,minimum size=0.55cm] at (2.6,0) {$\alpha$};
+\node at (1.3,-0.55) {$\varepsilon$};
+\node at (3.9,-0.55) {$\varepsilon$};
+\draw[->,thick,axzgreen] (5.8,0) -- (7.0,0);
+\draw[thick] (7.5,0)--(8.8,0); \node[circle,draw=blue!70,thick,minimum size=0.45cm] at (7.5,0){}; \node[circle,draw=blue!70,thick,minimum size=0.45cm] at (8.8,0){};
+\draw[thick] (9.7,0)--(11.0,0); \node[circle,draw=blue!70,thick,minimum size=0.45cm] at (9.7,0){}; \node[circle,draw=blue!70,thick,minimum size=0.45cm] at (11.0,0){};
+\node[draw=axzgreen,rounded corners,fill=lightgreen] at (9.2,1) {local target: $r_\alpha<2$};
+\end{tikzpicture}
+\caption{Deleting $\alpha$ reduces the problem to component constants attached to adjacent roots.}
+\end{figure}
+
+\chapter{The $r_\alpha$ Formula}
+Let
+\[
+ N(\alpha)=\{\varepsilon\in\Pi: \varepsilon\text{ is adjacent to }\alpha\}
+\]
+be the open neighborhood of $\alpha$ in the simple-root graph. For each adjacent root $\varepsilon\in N(\alpha)$, let $\Phi_\varepsilon$ be the irreducible component of $\Phi_\alpha$ containing $\varepsilon$, and let $\Pi_\varepsilon$ be its simple system.
+
+Let the highest root of $\Phi_\varepsilon$ be
+\[
+ \theta_\varepsilon=\sum_{\eta\in\Pi_\varepsilon}m_\eta\eta,\qquad m_\eta>0.
+\]
+Define the normalized coweight vector
+\[
+ \boxed{o_\eta=\frac{\check\omega_\eta}{m_\eta}.}
+\]
+Here $\check\omega_\eta$ is the fundamental coweight corresponding to $\eta$ in the component. This is a vector definition, not a scalar gauge.
+
+The Cellini--Marietti projection-height constant is
+\[
+ c_\varepsilon=\max_{\eta\in E_\varepsilon}(\omega_\varepsilon,o_\eta)
+ =\max_{\eta\in E_\varepsilon}\frac{(\omega_\varepsilon,\check\omega_\eta)}{m_\eta},
+\]
+where $E_\varepsilon\subseteq\Pi_\varepsilon$ is the affine-extremal set in the component. The only structural properties of $E_\varepsilon$ used below are that it is finite and contained in $\Pi_\varepsilon$.
+
+The local factor is
+\[
+ r_\alpha=\sum_{\varepsilon\in N(\alpha)}-(\alpha,\varepsilon^\vee)c_\varepsilon.
+\]
+Set
+\[
+ a_\varepsilon=-(\alpha,\varepsilon^\vee),\qquad b_\varepsilon=-(\varepsilon,\alpha^\vee).
+\]
+Then
+\[
+ r_\alpha=\sum_{\varepsilon\in N(\alpha)}a_\varepsilon c_\varepsilon.
+\]
+Because $\varepsilon$ is adjacent to $\alpha$, crystallographic Cartan integrality gives
+\[
+ a_\varepsilon\in\mathbb Z_{>0},\qquad b_\varepsilon\in\mathbb Z_{>0},
+\]
+so in particular $b_\varepsilon\ge1$.
+
+\begin{checkpoint}
+A referee should check that the $c_\varepsilon$ and $E_\varepsilon$ notation here matches the local constants in the cited Cellini--Marietti framework. Once $E_\varepsilon\subseteq\Pi_\varepsilon$ is verified, the proof no longer uses a type-by-type description of $E_\varepsilon$.
+\end{checkpoint}
+
+\part{Cartan Block Setup}
+
+\chapter{The Cartan Block Decomposition}
+Order the Cartan matrix so that the index corresponding to $\alpha$ appears first. The Cartan matrix then has block form
+\[
+ C=\begin{pmatrix}2&-a^T\\ -b&B\end{pmatrix},
+\]
+where the entries of $a$ and $b$ are as above and $B$ is the Cartan matrix of the subsystem after deleting $\alpha$.
+
+Throughout the proof we use the convention
+\[
+ \boxed{B_{ij}=(\beta_i,\beta_j^\vee).}
+\]
+This convention is chosen so inverse-Cartan entries match fundamental weight--coweight pairings.
+
+\begin{lemma}[Inverse-Cartan coordinate pairing]\label{lem:pairing}
+Let $G=B^{-1}$ under the convention $B_{ij}=(\beta_i,\beta_j^\vee)$. Then
+\[
+ G_{ij}=(\omega_i,\check\omega_j).
+\]
+\end{lemma}
+\begin{proof}
+Write $\omega_i=\sum_k x_k\beta_k$. Since $(\omega_i,\beta_j^\vee)=\delta_{ij}$, we have $x^T B=e_i^T$, hence $x^T=e_i^T B^{-1}$. Thus $x_j=G_{ij}$. Since $(\beta_k,\check\omega_j)=\delta_{kj}$, it follows that $(\omega_i,\check\omega_j)=x_j=G_{ij}$.
+\end{proof}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=Latex,node distance=1.1cm]
+\node[draw=axzblue,rounded corners,fill=lightblue,minimum width=3.5cm,minimum height=1cm] (block) {$C=\begin{pmatrix}2&-a^T\\-b&B\end{pmatrix}$};
+\node[draw=axzblue,rounded corners,fill=white,right=of block,minimum width=3.8cm] (a) {$a_\varepsilon=-(\alpha,\varepsilon^\vee)$};
+\node[draw=axzblue,rounded corners,fill=white,below=of a,minimum width=3.8cm] (b) {$b_\varepsilon=-(\varepsilon,\alpha^\vee)$};
+\draw[->,thick] (block) -- (a); \draw[->,thick] (block) -- (b);
+\node[draw=axzgold,rounded corners,fill=lightgold,below=1.6cm of block,minimum width=9cm,align=center] {Convention: $B_{ij}=(\beta_i,\beta_j^\vee)$ so $G_{ij}=(\omega_i,\check\omega_j)$};
+\end{tikzpicture}
+\caption{The Cartan block decomposition and the orientation convention used throughout the proof.}
+\end{figure}
+
+\chapter{Non-Simply-Laced Convention Warning}
+In non-simply-laced systems, $B$ need not be symmetric. Reversing the convention transposes the matrix and can invalidate row-based inequalities. The Green ratio proof is a row argument: the row $g^{(e)}$ of $G=B^{-1}$ satisfies
+\[
+ g^{(e)}B=e_e^T.
+\]
+Therefore the proof is tied to the convention
+\[
+ B_{ij}=(\beta_i,\beta_j^\vee),
+\]
+not to its transpose.
+
+This convention is also the one that aligns $G_{ij}$ with $(\omega_i,\check\omega_j)$ in the $c_\varepsilon$ bridge. The Sage appendix confirms that the proof convention succeeds across the tested finite Cartan systems, while the opposite convention can fail in non-simply-laced types.
+
+\part{The Green Ratio Engine}
+
+\chapter{M-Matrix Positivity}
+The Green Ratio Maximum Lemma uses a standard finite-type Cartan fact: finite-type Cartan matrices are nonsingular $M$-matrices, and principal finite-type Cartan submatrices have entrywise nonnegative inverses.
+
+\begin{lemma}[Finite Cartan $M$-matrix inverse positivity]\label{lem:mmatrix}
+Let $B$ be a principal finite-type Cartan matrix, written in the convention $B_{ij}=(\beta_i,\beta_j^\vee)$. Then $B$ has positive diagonal entries, nonpositive off-diagonal entries, positive determinant, and positive principal minors. Consequently $B$ is a nonsingular $M$-matrix and
+\[
+ B^{-1}\ge0
+\]
+entrywise.
+\end{lemma}
+\begin{proof}[Proof sketch]
+Finite-type Cartan matrices are symmetrizable by a positive diagonal matrix $D$, so $DB$ is symmetric positive definite. Positive definiteness of the symmetrization implies positivity of principal determinants. With positive diagonal entries and nonpositive off-diagonal entries, $B$ is a $Z$-matrix with positive principal minors, hence a nonsingular $M$-matrix. The inverse-positivity theorem for nonsingular $M$-matrices gives $B^{-1}\ge0$ entrywise; see \cite{berman_plemmons,horn_johnson,kac,humphreys}.
+\end{proof}
+
+\chapter{Highest-Root Dominance}
+Let $B$ be the Cartan matrix of a finite irreducible component with simple roots $\{\beta_i\}_{i\in I}$. Let
+\[
+ \theta=\sum_{j\in I}m_j\beta_j,\qquad m_j>0,
+\]
+be the highest root of the component.
+
+\begin{lemma}[Highest-root dominance]\label{lem:highest}
+\[
+ m^T B\ge0
+\]
+entrywise.
+\end{lemma}
+\begin{proof}
+The $j$-th entry of $m^T B$ is
+\[
+ (m^T B)_j=(\theta,\beta_j^\vee).
+\]
+Suppose for contradiction that $(\theta,\beta_j^\vee)<0$. By the root-string property, $\theta+\beta_j$ would then be a root. This contradicts maximality of the highest root $\theta$. Hence $(\theta,\beta_j^\vee)\ge0$ for every $j$, proving the claim.
+\end{proof}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=Latex]
+\draw[->,thick,blue!70] (0,0)--(5,1.4) node[midway,above] {$\theta$};
+\draw[->,thick,red!70] (5,1.4)--(6.3,2.0) node[midway,above] {$+\beta_j$};
+\node[draw=red!60,rounded corners,fill=red!5,align=center] at (3.2,-0.8) {If $(\theta,\beta_j^\vee)<0$, then $\theta+\beta_j$ would be a root};
+\node[draw=axzgreen,rounded corners,fill=lightgreen,align=center] at (3.2,-1.8) {Highest-root maximality forces $(\theta,\beta_j^\vee)\ge0$, hence $m^TB\ge0$};
+\end{tikzpicture}
+\caption{Highest-root dominance: negativity would create a larger root, contradicting maximality.}
+\end{figure}
+
+\chapter{The Green Ratio Maximum Lemma}
+Let $G=B^{-1}$. By Lemma~\ref{lem:mmatrix}, $G\ge0$ entrywise.
+
+\begin{theorem}[Green Ratio Maximum Lemma]\label{thm:greenratio}
+For every node $e\in I$,
+\[
+ \boxed{\max_{j\in I}\frac{G_{ej}}{m_j}\le \frac{G_{ee}}{m_e}\le G_{ee}.}
+\]
+\end{theorem}
+\begin{proof}
+Let $g^{(e)}$ denote the $e$-th row of $G$. Since $G=B^{-1}$,
+\[
+ g^{(e)}B=e_e^T.
+\]
+Set
+\[
+ \lambda=\frac{G_{ee}}{m_e}
+\]
+and define
+\[
+ y=g^{(e)}-\lambda m^T.
+\]
+Then
+\[
+ y_e=G_{ee}-\lambda m_e=0.
+\]
+Moreover,
+\[
+ yB=e_e^T-\lambda m^TB.
+\]
+By highest-root dominance, $m^T B\ge0$. Thus for $j\ne e$,
+\[
+ (yB)_j=0-\lambda(m^TB)_j\le0.
+\]
+Deleting the $e$-th coordinate gives
+\[
+ y_{\bar e}B_{\bar e\bar e}\le0.
+\]
+The matrix $B_{\bar e\bar e}$ is a principal submatrix of a finite-type Cartan matrix. It is again a nonsingular $M$-matrix, so
+\[
+ B_{\bar e\bar e}^{-1}\ge0
+\]
+entrywise. Multiplying on the right yields
+\[
+ y_{\bar e}=(y_{\bar e}B_{\bar e\bar e})B_{\bar e\bar e}^{-1}\le0.
+\]
+Therefore, for $j\ne e$,
+\[
+ G_{ej}-\lambda m_j\le0,
+\]
+so
+\[
+ \frac{G_{ej}}{m_j}\le\lambda=\frac{G_{ee}}{m_e}.
+\]
+The case $j=e$ is equality. Since $m_e\ge1$, we also have $G_{ee}/m_e\le G_{ee}$. This proves the lemma.
+\end{proof}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=Latex,node distance=1.1cm]
+\tikzstyle{box}=[draw=axzblue,rounded corners,fill=lightblue,minimum width=3.1cm,minimum height=0.7cm,align=center]
+\node[box] (a) {$g^{(e)}B=e_e^T$};
+\node[box,right=of a] (b) {$y=g^{(e)}-\lambda m^T$};
+\node[box,right=of b] (c) {$y_e=0$};
+\node[box,below=of a] (d) {$yB=e_e^T-\lambda m^TB$};
+\node[box,below=of b] (e) {$(yB)_j\le0$ for $j\ne e$};
+\node[box,below=of c] (f) {$y_{\bar e}B_{\bar e\bar e}\le0$};
+\node[box,below=of e] (g) {$B_{\bar e\bar e}^{-1}\ge0$};
+\node[box,right=of g] (h) {$y_{\bar e}\le0$};
+\node[box,below=of h] (i) {$G_{ej}/m_j\le G_{ee}/m_e$};
+\draw[->] (a)--(b); \draw[->] (b)--(c); \draw[->] (a)--(d); \draw[->] (b)--(e); \draw[->] (c)--(f); \draw[->] (e)--(g); \draw[->] (f)--(h); \draw[->] (g)--(h); \draw[->] (h)--(i);
+\end{tikzpicture}
+\caption{The sign flow in the Green Ratio Maximum Lemma.}
+\end{figure}
+
+\part{The Green--Schur Bridge}
+
+\chapter{The $c_\varepsilon$ Bridge}
+The Cellini--Marietti coefficient is
+\[
+ c_\varepsilon=\max_{\eta\in E_\varepsilon}\frac{(\omega_\varepsilon,\check\omega_\eta)}{m_\eta}.
+\]
+By Lemma~\ref{lem:pairing},
+\[
+ (\omega_\varepsilon,\check\omega_\eta)=G_{\varepsilon\eta}.
+\]
+Thus
+\[
+ c_\varepsilon=\max_{\eta\in E_\varepsilon}\frac{G_{\varepsilon\eta}}{m_\eta}.
+\]
+Since $E_\varepsilon\subseteq\Pi_\varepsilon$,
+\[
+ c_\varepsilon\le \max_{\eta\in\Pi_\varepsilon}\frac{G_{\varepsilon\eta}}{m_\eta}.
+\]
+By the Green Ratio Maximum Lemma,
+\[
+ \max_{\eta\in\Pi_\varepsilon}\frac{G_{\varepsilon\eta}}{m_\eta}\le G_{\varepsilon\varepsilon}.
+\]
+Therefore
+\[
+ \boxed{c_\varepsilon\le G_{\varepsilon\varepsilon}.}
+\]
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=Latex,node distance=1.2cm]
+\tikzstyle{box}=[draw=axzblue,rounded corners,fill=lightblue,minimum width=3.4cm,minimum height=0.8cm,align=center]
+\node[box] (a) {$c_\varepsilon=\max\frac{(\omega_\varepsilon,\check\omega_\eta)}{m_\eta}$};
+\node[box,right=of a] (b) {$(\omega_\varepsilon,\check\omega_\eta)=G_{\varepsilon\eta}$};
+\node[box,right=of b] (c) {$c_\varepsilon\le\max_{\eta\in\Pi_\varepsilon}\frac{G_{\varepsilon\eta}}{m_\eta}$};
+\node[draw=axzgreen,rounded corners,fill=lightgreen,below=1.2cm of c,minimum width=3.5cm,align=center] (d) {Green ratio gives\\$\max G_{\varepsilon\eta}/m_\eta\le G_{\varepsilon\varepsilon}$};
+\node[draw=axzgold,rounded corners,fill=lightgold,left=of d,minimum width=3.2cm,align=center] (e) {$c_\varepsilon\le G_{\varepsilon\varepsilon}$};
+\draw[->] (a)--(b); \draw[->] (b)--(c); \draw[->] (c)--(d); \draw[->] (d)--(e);
+\end{tikzpicture}
+\caption{The $c_\varepsilon$ bridge from Cellini--Marietti constants to diagonal inverse-Cartan entries.}
+\end{figure}
+
+\chapter{Symmetrizability and Positive Determinants}
+Finite Cartan matrices need not be symmetric, but they are symmetrizable. There exists a diagonal matrix
+\[
+ D=\operatorname{diag}(d_1,\dots,d_n),\qquad d_i>0,
+\]
+such that
+\[
+ S=DC
+\]
+is symmetric positive definite. Hence
+\[
+ \det S=(\det D)(\det C)>0,
+\]
+and since $\det D>0$,
+\[
+ \det C>0.
+\]
+The same argument applies to every principal finite-type Cartan submatrix, including $B$. Hence
+\[
+ \det C>0,\qquad \det B>0.
+\]
+This is the correct non-symmetric replacement for the informal phrase ``$C$ and $B$ are positive definite.'' Their symmetrizations are positive definite; the Cartan matrices themselves are symmetrizable with positive determinant.
+
+\chapter{Schur Complement Bound}
+\begin{theorem}[Schur complement bound]\label{thm:schur}
+For the Cartan block
+\[
+ C=\begin{pmatrix}2&-a^T\\-b&B\end{pmatrix},
+\]
+one has
+\[
+ \boxed{a^T B^{-1}b<2.}
+\]
+\end{theorem}
+\begin{proof}
+The block determinant identity gives
+\[
+ \det C=\det B(2-a^T B^{-1}b).
+\]
+By determinant positivity, $\det C>0$ and $\det B>0$. Hence
+\[
+ 2-a^T B^{-1}b>0,
+\]
+which is equivalent to
+\[
+ a^T B^{-1}b<2.
+\]
+\end{proof}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=Latex,node distance=1.4cm]
+\node[draw=axzblue,rounded corners,fill=lightblue,minimum width=4cm,align=center] (det) {$\det C=\det B(2-a^TB^{-1}b)$};
+\node[draw=axzgreen,rounded corners,fill=lightgreen,right=of det,minimum width=3.6cm,align=center] (pos) {$\det C>0,\ \det B>0$};
+\node[draw=axzgold,rounded corners,fill=lightgold,below=of pos,minimum width=3.6cm,align=center] (sc) {$2-a^TB^{-1}b>0$};
+\node[draw=axzgold,rounded corners,fill=lightgold,below=of sc,minimum width=3.6cm,align=center] (bound) {$a^TB^{-1}b<2$};
+\draw[->] (det)--(pos); \draw[->] (pos)--(sc); \draw[->] (sc)--(bound);
+\end{tikzpicture}
+\caption{The Schur complement converts determinant positivity into $a^T B^{-1}b<2$.}
+\end{figure}
+
+\part{Main Proof}
+
+\chapter{Edge Handling and Component Support}
+The proof must not rely on hidden classification facts about the shape of Dynkin diagrams. Therefore we handle possible component support directly.
+
+Let $G=B^{-1}$. Since $B$ is finite type, $G\ge0$ entrywise. The vectors $a$ and $b$ are nonnegative and supported only on nodes adjacent to $\alpha$. For each $\varepsilon\in N(\alpha)$, the diagonal term $G_{\varepsilon\varepsilon}$ appears in $a^TGb$, and all off-diagonal terms are nonnegative. Therefore
+\[
+ \boxed{\sum_{\varepsilon\in N(\alpha)}a_\varepsilon b_\varepsilon G_{\varepsilon\varepsilon}\le a^TGb.}
+\]
+This inequality is the robust edge-handling step. It remains valid without any case-by-case discussion of graph shapes.
+
+\chapter{The Green--Schur Bridge Theorem}
+\begin{theorem}[\GS{} local bound]\label{thm:local}
+For every simple root $\alpha$ in the reduction framework,
+\[
+ \boxed{r_\alpha<2.}
+\]
+\end{theorem}
+\begin{proof}
+Start from
+\[
+ r_\alpha=\sum_{\varepsilon\in N(\alpha)}a_\varepsilon c_\varepsilon.
+\]
+Using the $c_\varepsilon$ bridge,
+\[
+ c_\varepsilon\le G_{\varepsilon\varepsilon},
+\]
+we obtain
+\[
+ r_\alpha\le \sum_{\varepsilon\in N(\alpha)}a_\varepsilon G_{\varepsilon\varepsilon}.
+\]
+Since $b_\varepsilon\ge1$ and all terms are nonnegative,
+\[
+ \sum_{\varepsilon\in N(\alpha)}a_\varepsilon G_{\varepsilon\varepsilon}
+ \le \sum_{\varepsilon\in N(\alpha)}a_\varepsilon b_\varepsilon G_{\varepsilon\varepsilon}.
+\]
+By the edge-handling inequality,
+\[
+ \sum_{\varepsilon\in N(\alpha)}a_\varepsilon b_\varepsilon G_{\varepsilon\varepsilon}
+ \le a^TGb=a^T B^{-1}b.
+\]
+By Theorem~\ref{thm:schur},
+\[
+ a^T B^{-1}b<2.
+\]
+Therefore
+\[
+ r_\alpha<2.
+\]
+\end{proof}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=Latex,node distance=1.2cm]
+\tikzstyle{box}=[draw=axzblue,rounded corners,fill=lightblue,minimum width=3.2cm,minimum height=0.8cm,align=center]
+\node[box] (cm) {Cellini--Marietti\\reduction};
+\node[box,below left=of cm] (hr) {highest-root\\dominance};
+\node[box,below=of cm] (mm) {$M$-matrix\\inverse positivity};
+\node[box,below right=of cm] (schur) {Schur\\complement};
+\node[box,below=1.6cm of mm] (green) {Green Ratio\\Maximum Lemma};
+\node[box,right=of green] (ce) {$c_\varepsilon\le G_{\varepsilon\varepsilon}$};
+\node[box,below=of ce] (ra) {$r_\alpha<2$};
+\node[box,below=of ra] (kap) {$\kappa(\Phi,U)<2$};
+\draw[->] (hr)--(green); \draw[->] (mm)--(green); \draw[->] (green)--(ce); \draw[->] (schur)--(ra); \draw[->] (ce)--(ra); \draw[->] (cm)--(ra); \draw[->] (ra)--(kap);
+\end{tikzpicture}
+\caption{Dependency pipeline for the classification-free proof.}
+\end{figure}
+
+\chapter{OPAC-018 Completion}
+\begin{theorem}[\GS{} completion of OPAC-018]\label{thm:completion}
+For every finite crystallographic root system $\Phi$ and every nonzero $\Phi$-subspace $U$ in the OPAC-018 projection problem,
+\[
+ \boxed{\kappa(\Phi,U)<2.}
+\]
+\end{theorem}
+\begin{proof}
+By the Cellini--Marietti transfer framework, the OPAC-018 projection dilation bound is obtained once $r_\alpha<2$ is known uniformly for the local codimension-one constants. The \GS{} local bound proves $r_\alpha<2$ without branching by root-system type. Hence the transfer layer gives
+\[
+ \kappa(\Phi,U)<2.
+\]
+This completes the manuscript-level \GS{} proof candidate of the OPAC-018 bound. The remaining step for public mathematical status is independent referee verification of the reduction alignment and notation bridge.
+\end{proof}
+
+\chapter{Reducible Root Systems}
+Many treatments reduce immediately to irreducible root systems. For completeness, we record the standard componentwise handling.
+
+\begin{lemma}[Componentwise reduction]\label{lem:reducible}
+Suppose $\Phi=\Phi_1\sqcup\cdots\sqcup\Phi_s$ is an orthogonal direct sum of irreducible components, and $U=\bigoplus_i U_i$ is the corresponding $\Phi$-subspace decomposition. The OPAC containment bound is controlled componentwise: if every irreducible component has a dilation bound strictly below $2$, then so does $\Phi$.
+\end{lemma}
+\begin{proof}[Proof sketch]
+The roots lie in orthogonal component subspaces. A projected root belongs to one component at a time, and the OPAC constant may be tested on projected roots by the gauge formula from Chapter 2. Thus the global root-by-root maximum is controlled by the maximum of the component root-by-root maxima. Since a finite maximum of constants strictly below $2$ is strictly below $2$, the reducible system follows from the irreducible systems.
+\end{proof}
+
+\part{Verification and Audit Assets}
+
+\chapter{Sage Exact-Arithmetic Audit Design}
+The proof above is classification-free. The Sage harness is included only as an exact-arithmetic audit of Cartan identities, convention choices, highest-root marks, Green ratio comparisons, and Schur complement computations.
+
+The harness tests the finite Cartan systems
+\[
+ A_1\text{--}A_8,\quad B_2\text{--}B_8,\quad C_2\text{--}C_8,
+ \quad D_4\text{--}D_8,
+ \quad E_6,E_7,E_8,F_4,G_2.
+\]
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[node distance=1.3cm]
+\node[draw=axzblue,rounded corners,fill=lightblue,minimum width=3cm,minimum height=1cm,align=center] (n) {32 finite\\Cartan tests};
+\node[draw=axzgreen,rounded corners,fill=lightgreen,right=of n,minimum width=3cm,minimum height=1cm] (f) {0 failures};
+\node[draw=axzgold,rounded corners,fill=lightgold,right=of f,minimum width=3cm,minimum height=1cm,align=center] (o) {orientation\\checked};
+\node[draw=black!60,rounded corners,below=1.2cm of f,minimum width=9.5cm,align=center] {Sage is an exact-arithmetic audit, not a logical dependency of the proof.};
+\end{tikzpicture}
+\caption{Exact Sage audit summary.}
+\end{figure}
+
+\chapter{Sage Test Results}
+The verified result summary is:
+\begin{lstlisting}[style=sage]
+{
+  "passed": true,
+  "total_types": 32,
+  "failures": 0,
+  "truth_label": "FINITE_CARTAN_EXACT_SAGE_TEST"
+}
+\end{lstlisting}
+The audit also records the convention warning: the proof must use
+\[
+ B_{ij}=(\beta_i,\beta_j^\vee).
+\]
+The opposite orientation can fail in non-simply-laced systems.
+
+\chapter{What Sage Proves and Does Not Prove}
+\section*{What Sage audits}
+\begin{itemize}
+\item root counts match expected finite systems in the test range;
+\item the proof convention for $B$ is the correct row convention;
+\item Green ratio inequalities pass in exact arithmetic;
+\item Schur complement inequalities pass in exact arithmetic;
+\item no failures occur in the stated finite Cartan audit suite.
+\end{itemize}
+
+\section*{What Sage does not prove}
+\begin{itemize}
+\item Sage does not replace the classification-free proof in the manuscript;
+\item Sage does not prove journal acceptance;
+\item Sage does not prove historical recognition;
+\item Sage does not remove the need for independent referee review.
+\end{itemize}
+
+\part{Referee Packet}
+
+\chapter{Referee Checklist}
+A referee should verify the following checkpoints.
+\begin{enumerate}
+\item The OPAC-018 definition of $\kappa(\Phi,U)$ is used as a containment/gauge invariant.
+\item The Cellini--Marietti transfer from $\kappa(\Phi,U)<2$ to $r_\alpha<2$ is correctly cited and aligned.
+\item The corrected definition $o_\eta=\check\omega_\eta/m_\eta$ is used.
+\item The convention $B_{ij}=(\beta_i,\beta_j^\vee)$ is used consistently.
+\item The inverse-Cartan entry identity $G_{ij}=(\omega_i,\check\omega_j)$ is correct under that convention.
+\item Highest-root dominance $m^TB\ge0$ follows from the root-string property.
+\item Principal finite-type Cartan submatrices are nonsingular $M$-matrices with nonnegative inverse.
+\item The Green Ratio Maximum Lemma is type-free.
+\item The Schur complement determinant argument uses positive determinants of symmetrizable finite-type matrices, not symmetric positive-definiteness of nonsymmetric Cartan matrices.
+\item The edge-handling step correctly uses nonnegative off-diagonal inverse-Cartan entries.
+\item The proof of $r_\alpha<2$ transfers to $\kappa(\Phi,U)<2$ through the cited reduction.
+\item Sage is treated as an exact audit, not as a logical dependency.
+\end{enumerate}
+
+\chapter{Public Summary}
+Shawn Calvin Snelling presents a \GS{} Cartan proof candidate of the OPAC-018 root-polytope projection bound. The proof replaces the case-by-case finite-root-system comparison with a uniform inverse-Cartan ratio inequality and a Schur complement argument. The finite Cartan core has been exact-audited in Sage with 32 tested finite Cartan cases and zero failures. External referee review remains pending.
+
+\chapter{Repository Protocol}
+The referee package accompanying this edition contains the manuscript PDF, the fixed Sage exact-arithmetic audit, the JSON audit result, a SHA-256 manifest, public claims/nonclaims, and a journal cover letter draft.
+
+\section*{Required repository layout}
+\begin{lstlisting}[style=sage]
+AXEZENT-AI-OPAC018-Green-Schur-Bridge/
+  paper/Green-Schur-Bridge-for-OPAC018-Complete-Referee-Edition-v1_3.pdf
+  paper/main.tex
+  sage/opac18_green_schur_sage_test_fixed.sage
+  receipts/opac18_green_schur_sage_results.json
+  receipts/SHA256SUMS.txt
+  README.md
+  CLAIMS_AND_NONCLAIMS.md
+  SUBMISSION_COVER_LETTER_DRAFT.md
+  verify_manifest.py
+\end{lstlisting}
+
+\section*{Audit commands}
+\begin{lstlisting}[style=sage]
+sage sage/opac18_green_schur_sage_test_fixed.sage
+python verify_manifest.py
+\end{lstlisting}
+
+\section*{Public status line}
+Complete OPAC-018 solution candidate manuscript; exact Sage audit passed; external referee review pending.
+
+\appendix
+\part{Appendices}
+
+\chapter{OPAC-018 Original Problem Statement}
+The OPAC problem statement defines $\kappa(\Phi,U)$ by containment
+\[
+ \pi_U(\Conv(\Phi))\subseteq \kappa\Conv(\Phi\cap U),
+\]
+and asks for a uniform proof that $\kappa(\Phi,U)<2$ without relying on the classification of root systems \cite{opac018}.
+
+\chapter{Cellini--Marietti Notation Map}
+\begin{longtable}{p{0.28\textwidth}p{0.28\textwidth}p{0.34\textwidth}}
+\toprule
+\textbf{Green--Schur notation} & \textbf{Cellini--Marietti layer} & \textbf{Meaning}\\
+\midrule
+$\alpha$ & $\alpha$ & Isolated simple root defining the codimension-one parabolic subsystem.\\
+$N(\alpha)$ & neighbors of $\alpha$ & Open neighborhood of adjacent simple roots.\\
+$\Phi_\varepsilon$ & $\Phi_\varepsilon$ & Component containing adjacent neighbor $\varepsilon$.\\
+$\theta_\varepsilon=\sum m_\eta\eta$ & highest root expansion & Highest root of the component.\\
+$o_\eta=\check\omega_\eta/m_\eta$ & normalized coweight vector & Corrected vector parameter.\\
+$c_\varepsilon=\max(\omega_\varepsilon,o_\eta)$ & $c_\varepsilon$ & Projection-height constant over affine-extremal roots.\\
+$B_{ij}=(\beta_i,\beta_j^\vee)$ & Cartan orientation & Essential row convention for asymmetric systems.\\
+$G=B^{-1}$ & inverse Cartan entries & $G_{ij}=(\omega_i,\check\omega_j)$.\\
+\bottomrule
+\end{longtable}
+
+\chapter{Complete Sign Expansion for the Green Ratio Lemma}
+The essential sign expansion is
+\[
+ yB=e_e^T-\lambda m^TB.
+\]
+For $j\ne e$,
+\[
+ (yB)_j=-\lambda(m^TB)_j\le0.
+\]
+Because $y_e=0$, deleting the $e$ coordinate gives
+\[
+ y_{\bar e}B_{\bar e\bar e}\le0.
+\]
+Since $B_{\bar e\bar e}^{-1}\ge0$,
+\[
+ y_{\bar e}\le0.
+\]
+Thus
+\[
+ G_{ej}\le \frac{G_{ee}}{m_e}m_j.
+\]
+
+\chapter{M-Matrix Background}
+A finite-type Cartan matrix has positive diagonal entries, nonpositive off-diagonal entries, and positive principal minors. Therefore it is a nonsingular $M$-matrix. Principal submatrices inherit these properties. A nonsingular $M$-matrix has entrywise nonnegative inverse. This is the only matrix-positivity fact used in the Green ratio proof.
+
+\chapter{Schur Complement Details}
+For
+\[
+ C=\begin{pmatrix}2&-a^T\\-b&B\end{pmatrix},
+\]
+the Schur complement of $B$ in $C$ is
+\[
+ 2-a^T B^{-1}b.
+\]
+Therefore
+\[
+ \det C=\det B(2-a^T B^{-1}b).
+\]
+Since $\det C$ and $\det B$ are positive, the scalar Schur complement is positive.
+
+\chapter{Sage Source Code}
+The full fixed Sage harness is included as part of the repository package.
+\begin{center}
+\fbox{\texttt{sage/opac18\_green\_schur\_sage\_test\_fixed.sage}}
+\end{center}
+\lstinputlisting[style=sage]{../sage/opac18_green_schur_sage_test_fixed.sage}
+
+\chapter{Sage JSON Output Summary}
+The repository package contains the full detailed per-type audit receipt at
+\begin{center}
+\fbox{\texttt{receipts/opac18\_green\_schur\_sage\_results.json}}
+\end{center}
+The file is not only a summary: it records all 32 tested finite Cartan systems, highest-root marks, Green-ratio values, Schur complement values, and failure lists. A compact preview is:
+\begin{lstlisting}[style=sage]
+{
+  "passed": true,
+  "total_types": 32,
+  "failures": [],
+  "truth_label": "FINITE_CARTAN_EXACT_SAGE_TEST",
+  "scope": "A1-A8, B2-B8, C2-C8, D4-D8, E6, E7, E8, F4, G2",
+  "important_convention": "B_ij=(beta_i,beta_j^vee)"
+}
+\end{lstlisting}
+The receipt is an exact-arithmetic audit asset. It is not a substitute for independent referee verification of the manuscript proof.
+
+\chapter{Boundary Cases and Degeneracy Notes}
+Rank-one and zero-adjacency cases are harmless: if there are no adjacent components contributing to $r_\alpha$, then $r_\alpha=0<2$. Disconnected $B$ is handled by block decomposition and nonnegative inverse-Cartan entries on each finite-type component. Non-simply-laced systems are handled by the explicit orientation convention. Strictness follows from Schur complement positivity.
+
+\chapter{Repository Upload Order}
+Suggested public repository name:
+\begin{center}
+\texttt{AXEZENT-AI-OPAC018-Green-Schur-Bridge}
+\end{center}
+Suggested layout:
+\begin{lstlisting}[style=sage]
+paper/main.tex
+paper/Green-Schur-Bridge-for-OPAC018-Complete-Referee-Edition-v1_3.pdf
+sage/opac18_green_schur_sage_test_fixed.sage
+receipts/opac18_green_schur_sage_results.json
+receipts/SHA256SUMS.txt
+README.md
+CLAIMS_AND_NONCLAIMS.md
+SUBMISSION_COVER_LETTER_DRAFT.md
+verify_manifest.py
+\end{lstlisting}
+
+\chapter{Journal Cover Letter Draft}
+\begin{quote}
+Dear Editor-in-Chief,
+
+I am writing to submit the manuscript titled \emph{The Green--Schur Bridge for OPAC-018: A Classification-Free Cartan--Schur Proof Candidate of the Root Polytope Projection Bound} for consideration as a research article.
+
+The manuscript addresses Open Problem 18 from the Open Problems in Algebraic Combinatorics collection. The problem asks for a uniform proof of the root-polytope projection dilation bound. The manuscript introduces a Green--Schur bridge: a type-free inverse-Cartan ratio inequality combined with a Schur complement argument. The proof establishes the local inequality $r_\alpha<2$ and then applies the Cellini--Marietti reduction framework to obtain $\kappa(\Phi,U)<2$.
+
+Exact Sage verification assets are included as supplementary audit materials. These assets audit the index convention and finite-type Cartan arithmetic, but they are not used as a logical substitute for the proof.
+
+This manuscript is original and is not under consideration elsewhere.
+
+Sincerely,
+
+Shawn Calvin Snelling\\
+Axezent AI Research Lab
+\end{quote}
+
+\backmatter
+\begin{thebibliography}{9}
+\bibitem{opac018} Open Problems in Algebraic Combinatorics, ``Root polytope projections,'' submitted by Sam Hopkins, October 13, 2019. URL: \url{https://realopacblog.wordpress.com/2019/10/13/root-polytope-projections/}.
+\bibitem{cellini_marietti} P. Cellini and M. Marietti, ``Root systems, affine subspaces, and projections,'' \emph{Journal of Algebra} 587 (2021), 310--335. arXiv:2109.00944. DOI: \url{https://doi.org/10.1016/j.jalgebra.2021.07.035}.
+\bibitem{hopkins_postnikov} S. Hopkins and A. Postnikov, ``A positive formula for the Ehrhart-like polynomials from root system chip-firing,'' \emph{Algebraic Combinatorics} 2 (2019), no. 6, 1159--1196. DOI: \url{https://doi.org/10.5802/alco.79}.
+\bibitem{berman_plemmons} A. Berman and R. J. Plemmons, \emph{Nonnegative Matrices in the Mathematical Sciences}, SIAM Classics in Applied Mathematics.
+\bibitem{horn_johnson} R. A. Horn and C. R. Johnson, \emph{Matrix Analysis}, Cambridge University Press.
+\bibitem{kac} V. Kac, \emph{Infinite-Dimensional Lie Algebras}, Cambridge University Press.
+\bibitem{humphreys} J. E. Humphreys, \emph{Introduction to Lie Algebras and Representation Theory}, Springer.
+\end{thebibliography}
+
+\end{document}
