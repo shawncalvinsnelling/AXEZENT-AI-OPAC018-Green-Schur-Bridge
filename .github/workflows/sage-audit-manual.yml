@@ -8,19 +8,41 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Verify frozen package manifest before Sage run
+        run: python verify_manifest.py
+
       - name: Install Miniforge
         run: |
-          curl -L -o miniforge.sh https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
-          bash miniforge.sh -b -p $HOME/miniforge3
+          curl -L -o /tmp/miniforge.sh https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+          bash /tmp/miniforge.sh -b -p $HOME/miniforge3
           echo "$HOME/miniforge3/bin" >> $GITHUB_PATH
+
       - name: Install SageMath from conda-forge
         run: |
           source $HOME/miniforge3/etc/profile.d/conda.sh
           conda create -n sage -c conda-forge sage python=3.12 -y
+
       - name: Run Sage audit
         run: |
           source $HOME/miniforge3/etc/profile.d/conda.sh
           conda activate sage
           sage sage/opac18_green_schur_sage_test_fixed.sage
-      - name: Verify SHA-256 manifest
-        run: python verify_manifest.py
+
+      - name: Check Sage audit summary
+        run: |
+          python - <<'PY'
+          import json
+          p = "receipts/opac18_green_schur_sage_results.json"
+          with open(p, encoding="utf-8") as f:
+              data = json.load(f)
+          print(json.dumps({
+              "passed": data.get("passed"),
+              "total_types": data.get("total_types"),
+              "failures": len(data.get("failures", [])),
+              "output": p
+          }, indent=2))
+          assert data.get("passed") is True
+          assert data.get("total_types") == 32
+          assert len(data.get("failures", [])) == 0
+          PY
