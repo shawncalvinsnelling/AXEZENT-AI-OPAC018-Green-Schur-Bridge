@@ -1,0 +1,26 @@
+name: Sage Exact Audit Manual
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sage-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Miniforge
+        run: |
+          curl -L -o miniforge.sh https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+          bash miniforge.sh -b -p $HOME/miniforge3
+          echo "$HOME/miniforge3/bin" >> $GITHUB_PATH
+      - name: Install SageMath from conda-forge
+        run: |
+          source $HOME/miniforge3/etc/profile.d/conda.sh
+          conda create -n sage -c conda-forge sage python=3.12 -y
+      - name: Run Sage audit
+        run: |
+          source $HOME/miniforge3/etc/profile.d/conda.sh
+          conda activate sage
+          sage sage/opac18_green_schur_sage_test_fixed.sage
+      - name: Verify SHA-256 manifest
+        run: python verify_manifest.py
