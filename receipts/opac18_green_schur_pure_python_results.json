@@ -1,25 +1,20 @@
 {
+  "dependency_policy": "standard library only; no Sage, NumPy, SymPy, or root-system libraries",
   "failures": [],
-  "important_convention": "Green ratio lemma should be stated using B = transpose(Bourbaki Cartan), i.e. B_ij=(beta_i,beta_j^vee). It fails in non-simply-laced types if the opposite convention is used.",
-  "manuscript_version": "v1.4 mainstream-hardening package",
-  "not_tested": [
-    "Cellini-Marietti c_epsilon exact notation bridge",
-    "external referee acceptance",
-    "full OPAC-018 transfer beyond the cited reduction"
-  ],
+  "manuscript_version": "v1.4 mainstream hardening package",
   "passed": true,
-  "receipt_level": "full detailed per-type audit plus v1.4 package context",
   "scope": "A1-A8, B2-B8, C2-C8, D4-D8, E6, E7, E8, F4, G2",
   "summary": [
     {
       "expected_root_count": 2,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1/2",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1/2"
           ],
@@ -31,6 +26,7 @@
           "lhs_max_ratio": "1/2",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1/2"
           ],
@@ -48,20 +44,22 @@
           "2_minus_S": "2",
           "S": "0",
           "det_ratio": "2",
-          "node": 0
+          "node": 0,
+          "passed": true
         }
       ],
       "type": "A1"
     },
     {
       "expected_root_count": 6,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "2/3",
           "mid_diag_over_mark": "2/3",
           "node": 0,
+          "passed": true,
           "ratios": [
             "2/3",
             "1/3"
@@ -72,6 +70,7 @@
           "lhs_max_ratio": "2/3",
           "mid_diag_over_mark": "2/3",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/3",
             "2/3"
@@ -84,6 +83,7 @@
           "lhs_max_ratio": "2/3",
           "mid_diag_over_mark": "2/3",
           "node": 0,
+          "passed": true,
           "ratios": [
             "2/3",
             "1/3"
@@ -94,6 +94,7 @@
           "lhs_max_ratio": "2/3",
           "mid_diag_over_mark": "2/3",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/3",
             "2/3"
@@ -113,26 +114,29 @@
           "2_minus_S": "3/2",
           "S": "1/2",
           "det_ratio": "3/2",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "3/2",
           "S": "1/2",
           "det_ratio": "3/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         }
       ],
       "type": "A2"
     },
     {
       "expected_root_count": 12,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "3/4",
           "mid_diag_over_mark": "3/4",
           "node": 0,
+          "passed": true,
           "ratios": [
             "3/4",
             "1/2",
@@ -144,6 +148,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -155,6 +160,7 @@
           "lhs_max_ratio": "3/4",
           "mid_diag_over_mark": "3/4",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/4",
             "1/2",
@@ -168,6 +174,7 @@
           "lhs_max_ratio": "3/4",
           "mid_diag_over_mark": "3/4",
           "node": 0,
+          "passed": true,
           "ratios": [
             "3/4",
             "1/2",
@@ -179,6 +186,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -190,6 +198,7 @@
           "lhs_max_ratio": "3/4",
           "mid_diag_over_mark": "3/4",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/4",
             "1/2",
@@ -211,32 +220,36 @@
           "2_minus_S": "4/3",
           "S": "2/3",
           "det_ratio": "4/3",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "4/3",
           "S": "2/3",
           "det_ratio": "4/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         }
       ],
       "type": "A3"
     },
     {
       "expected_root_count": 20,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "4/5",
           "mid_diag_over_mark": "4/5",
           "node": 0,
+          "passed": true,
           "ratios": [
             "4/5",
             "3/5",
@@ -249,6 +262,7 @@
           "lhs_max_ratio": "6/5",
           "mid_diag_over_mark": "6/5",
           "node": 1,
+          "passed": true,
           "ratios": [
             "3/5",
             "6/5",
@@ -261,6 +275,7 @@
           "lhs_max_ratio": "6/5",
           "mid_diag_over_mark": "6/5",
           "node": 2,
+          "passed": true,
           "ratios": [
             "2/5",
             "4/5",
@@ -273,6 +288,7 @@
           "lhs_max_ratio": "4/5",
           "mid_diag_over_mark": "4/5",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/5",
             "2/5",
@@ -287,6 +303,7 @@
           "lhs_max_ratio": "4/5",
           "mid_diag_over_mark": "4/5",
           "node": 0,
+          "passed": true,
           "ratios": [
             "4/5",
             "3/5",
@@ -299,6 +316,7 @@
           "lhs_max_ratio": "6/5",
           "mid_diag_over_mark": "6/5",
           "node": 1,
+          "passed": true,
           "ratios": [
             "3/5",
             "6/5",
@@ -311,6 +329,7 @@
           "lhs_max_ratio": "6/5",
           "mid_diag_over_mark": "6/5",
           "node": 2,
+          "passed": true,
           "ratios": [
             "2/5",
             "4/5",
@@ -323,6 +342,7 @@
           "lhs_max_ratio": "4/5",
           "mid_diag_over_mark": "4/5",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/5",
             "2/5",
@@ -346,38 +366,43 @@
           "2_minus_S": "5/4",
           "S": "3/4",
           "det_ratio": "5/4",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "5/6",
           "S": "7/6",
           "det_ratio": "5/6",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "5/6",
           "S": "7/6",
           "det_ratio": "5/6",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "5/4",
           "S": "3/4",
           "det_ratio": "5/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         }
       ],
       "type": "A4"
     },
     {
       "expected_root_count": 30,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "5/6",
           "mid_diag_over_mark": "5/6",
           "node": 0,
+          "passed": true,
           "ratios": [
             "5/6",
             "2/3",
@@ -391,6 +416,7 @@
           "lhs_max_ratio": "4/3",
           "mid_diag_over_mark": "4/3",
           "node": 1,
+          "passed": true,
           "ratios": [
             "2/3",
             "4/3",
@@ -404,6 +430,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -417,6 +444,7 @@
           "lhs_max_ratio": "4/3",
           "mid_diag_over_mark": "4/3",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/3",
             "2/3",
@@ -430,6 +458,7 @@
           "lhs_max_ratio": "5/6",
           "mid_diag_over_mark": "5/6",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1/6",
             "1/3",
@@ -445,6 +474,7 @@
           "lhs_max_ratio": "5/6",
           "mid_diag_over_mark": "5/6",
           "node": 0,
+          "passed": true,
           "ratios": [
             "5/6",
             "2/3",
@@ -458,6 +488,7 @@
           "lhs_max_ratio": "4/3",
           "mid_diag_over_mark": "4/3",
           "node": 1,
+          "passed": true,
           "ratios": [
             "2/3",
             "4/3",
@@ -471,6 +502,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -484,6 +516,7 @@
           "lhs_max_ratio": "4/3",
           "mid_diag_over_mark": "4/3",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/3",
             "2/3",
@@ -497,6 +530,7 @@
           "lhs_max_ratio": "5/6",
           "mid_diag_over_mark": "5/6",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1/6",
             "1/3",
@@ -522,44 +556,50 @@
           "2_minus_S": "6/5",
           "S": "4/5",
           "det_ratio": "6/5",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "3/4",
           "S": "5/4",
           "det_ratio": "3/4",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "2/3",
           "S": "4/3",
           "det_ratio": "2/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "3/4",
           "S": "5/4",
           "det_ratio": "3/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "6/5",
           "S": "4/5",
           "det_ratio": "6/5",
-          "node": 4
+          "node": 4,
+          "passed": true
         }
       ],
       "type": "A5"
     },
     {
       "expected_root_count": 42,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "6/7",
           "mid_diag_over_mark": "6/7",
           "node": 0,
+          "passed": true,
           "ratios": [
             "6/7",
             "5/7",
@@ -574,6 +614,7 @@
           "lhs_max_ratio": "10/7",
           "mid_diag_over_mark": "10/7",
           "node": 1,
+          "passed": true,
           "ratios": [
             "5/7",
             "10/7",
@@ -588,6 +629,7 @@
           "lhs_max_ratio": "12/7",
           "mid_diag_over_mark": "12/7",
           "node": 2,
+          "passed": true,
           "ratios": [
             "4/7",
             "8/7",
@@ -602,6 +644,7 @@
           "lhs_max_ratio": "12/7",
           "mid_diag_over_mark": "12/7",
           "node": 3,
+          "passed": true,
           "ratios": [
             "3/7",
             "6/7",
@@ -616,6 +659,7 @@
           "lhs_max_ratio": "10/7",
           "mid_diag_over_mark": "10/7",
           "node": 4,
+          "passed": true,
           "ratios": [
             "2/7",
             "4/7",
@@ -630,6 +674,7 @@
           "lhs_max_ratio": "6/7",
           "mid_diag_over_mark": "6/7",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/7",
             "2/7",
@@ -646,6 +691,7 @@
           "lhs_max_ratio": "6/7",
           "mid_diag_over_mark": "6/7",
           "node": 0,
+          "passed": true,
           "ratios": [
             "6/7",
             "5/7",
@@ -660,6 +706,7 @@
           "lhs_max_ratio": "10/7",
           "mid_diag_over_mark": "10/7",
           "node": 1,
+          "passed": true,
           "ratios": [
             "5/7",
             "10/7",
@@ -674,6 +721,7 @@
           "lhs_max_ratio": "12/7",
           "mid_diag_over_mark": "12/7",
           "node": 2,
+          "passed": true,
           "ratios": [
             "4/7",
             "8/7",
@@ -688,6 +736,7 @@
           "lhs_max_ratio": "12/7",
           "mid_diag_over_mark": "12/7",
           "node": 3,
+          "passed": true,
           "ratios": [
             "3/7",
             "6/7",
@@ -702,6 +751,7 @@
           "lhs_max_ratio": "10/7",
           "mid_diag_over_mark": "10/7",
           "node": 4,
+          "passed": true,
           "ratios": [
             "2/7",
             "4/7",
@@ -716,6 +766,7 @@
           "lhs_max_ratio": "6/7",
           "mid_diag_over_mark": "6/7",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/7",
             "2/7",
@@ -743,50 +794,57 @@
           "2_minus_S": "7/6",
           "S": "5/6",
           "det_ratio": "7/6",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "7/10",
           "S": "13/10",
           "det_ratio": "7/10",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "7/12",
           "S": "17/12",
           "det_ratio": "7/12",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "7/12",
           "S": "17/12",
           "det_ratio": "7/12",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "7/10",
           "S": "13/10",
           "det_ratio": "7/10",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "7/6",
           "S": "5/6",
           "det_ratio": "7/6",
-          "node": 5
+          "node": 5,
+          "passed": true
         }
       ],
       "type": "A6"
     },
     {
       "expected_root_count": 56,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "7/8",
           "mid_diag_over_mark": "7/8",
           "node": 0,
+          "passed": true,
           "ratios": [
             "7/8",
             "3/4",
@@ -802,6 +860,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 1,
+          "passed": true,
           "ratios": [
             "3/4",
             "3/2",
@@ -817,6 +876,7 @@
           "lhs_max_ratio": "15/8",
           "mid_diag_over_mark": "15/8",
           "node": 2,
+          "passed": true,
           "ratios": [
             "5/8",
             "5/4",
@@ -832,6 +892,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -847,6 +908,7 @@
           "lhs_max_ratio": "15/8",
           "mid_diag_over_mark": "15/8",
           "node": 4,
+          "passed": true,
           "ratios": [
             "3/8",
             "3/4",
@@ -862,6 +924,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/4",
             "1/2",
@@ -877,6 +940,7 @@
           "lhs_max_ratio": "7/8",
           "mid_diag_over_mark": "7/8",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1/8",
             "1/4",
@@ -894,6 +958,7 @@
           "lhs_max_ratio": "7/8",
           "mid_diag_over_mark": "7/8",
           "node": 0,
+          "passed": true,
           "ratios": [
             "7/8",
             "3/4",
@@ -909,6 +974,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 1,
+          "passed": true,
           "ratios": [
             "3/4",
             "3/2",
@@ -924,6 +990,7 @@
           "lhs_max_ratio": "15/8",
           "mid_diag_over_mark": "15/8",
           "node": 2,
+          "passed": true,
           "ratios": [
             "5/8",
             "5/4",
@@ -939,6 +1006,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -954,6 +1022,7 @@
           "lhs_max_ratio": "15/8",
           "mid_diag_over_mark": "15/8",
           "node": 4,
+          "passed": true,
           "ratios": [
             "3/8",
             "3/4",
@@ -969,6 +1038,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/4",
             "1/2",
@@ -984,6 +1054,7 @@
           "lhs_max_ratio": "7/8",
           "mid_diag_over_mark": "7/8",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1/8",
             "1/4",
@@ -1013,56 +1084,64 @@
           "2_minus_S": "8/7",
           "S": "6/7",
           "det_ratio": "8/7",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "2/3",
           "S": "4/3",
           "det_ratio": "2/3",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "8/15",
           "S": "22/15",
           "det_ratio": "8/15",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "8/15",
           "S": "22/15",
           "det_ratio": "8/15",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "2/3",
           "S": "4/3",
           "det_ratio": "2/3",
-          "node": 5
+          "node": 5,
+          "passed": true
         },
         {
           "2_minus_S": "8/7",
           "S": "6/7",
           "det_ratio": "8/7",
-          "node": 6
+          "node": 6,
+          "passed": true
         }
       ],
       "type": "A7"
     },
     {
       "expected_root_count": 72,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "8/9",
           "mid_diag_over_mark": "8/9",
           "node": 0,
+          "passed": true,
           "ratios": [
             "8/9",
             "7/9",
@@ -1079,6 +1158,7 @@
           "lhs_max_ratio": "14/9",
           "mid_diag_over_mark": "14/9",
           "node": 1,
+          "passed": true,
           "ratios": [
             "7/9",
             "14/9",
@@ -1095,6 +1175,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "2/3",
             "4/3",
@@ -1111,6 +1192,7 @@
           "lhs_max_ratio": "20/9",
           "mid_diag_over_mark": "20/9",
           "node": 3,
+          "passed": true,
           "ratios": [
             "5/9",
             "10/9",
@@ -1127,6 +1209,7 @@
           "lhs_max_ratio": "20/9",
           "mid_diag_over_mark": "20/9",
           "node": 4,
+          "passed": true,
           "ratios": [
             "4/9",
             "8/9",
@@ -1143,6 +1226,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/3",
             "2/3",
@@ -1159,6 +1243,7 @@
           "lhs_max_ratio": "14/9",
           "mid_diag_over_mark": "14/9",
           "node": 6,
+          "passed": true,
           "ratios": [
             "2/9",
             "4/9",
@@ -1175,6 +1260,7 @@
           "lhs_max_ratio": "8/9",
           "mid_diag_over_mark": "8/9",
           "node": 7,
+          "passed": true,
           "ratios": [
             "1/9",
             "2/9",
@@ -1193,6 +1279,7 @@
           "lhs_max_ratio": "8/9",
           "mid_diag_over_mark": "8/9",
           "node": 0,
+          "passed": true,
           "ratios": [
             "8/9",
             "7/9",
@@ -1209,6 +1296,7 @@
           "lhs_max_ratio": "14/9",
           "mid_diag_over_mark": "14/9",
           "node": 1,
+          "passed": true,
           "ratios": [
             "7/9",
             "14/9",
@@ -1225,6 +1313,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "2/3",
             "4/3",
@@ -1241,6 +1330,7 @@
           "lhs_max_ratio": "20/9",
           "mid_diag_over_mark": "20/9",
           "node": 3,
+          "passed": true,
           "ratios": [
             "5/9",
             "10/9",
@@ -1257,6 +1347,7 @@
           "lhs_max_ratio": "20/9",
           "mid_diag_over_mark": "20/9",
           "node": 4,
+          "passed": true,
           "ratios": [
             "4/9",
             "8/9",
@@ -1273,6 +1364,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/3",
             "2/3",
@@ -1289,6 +1381,7 @@
           "lhs_max_ratio": "14/9",
           "mid_diag_over_mark": "14/9",
           "node": 6,
+          "passed": true,
           "ratios": [
             "2/9",
             "4/9",
@@ -1305,6 +1398,7 @@
           "lhs_max_ratio": "8/9",
           "mid_diag_over_mark": "8/9",
           "node": 7,
+          "passed": true,
           "ratios": [
             "1/9",
             "2/9",
@@ -1336,62 +1430,83 @@
           "2_minus_S": "9/8",
           "S": "7/8",
           "det_ratio": "9/8",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "9/14",
           "S": "19/14",
           "det_ratio": "9/14",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "9/20",
           "S": "31/20",
           "det_ratio": "9/20",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "9/20",
           "S": "31/20",
           "det_ratio": "9/20",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 5
+          "node": 5,
+          "passed": true
         },
         {
           "2_minus_S": "9/14",
           "S": "19/14",
           "det_ratio": "9/14",
-          "node": 6
+          "node": 6,
+          "passed": true
         },
         {
           "2_minus_S": "9/8",
           "S": "7/8",
           "det_ratio": "9/8",
-          "node": 7
+          "node": 7,
+          "passed": true
         }
       ],
       "type": "A8"
     },
     {
       "expected_root_count": 8,
-      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 1,
+          "passed": false,
+          "ratios": [
+            "1",
+            "1/2"
+          ],
+          "rhs_diag": "1"
+        }
+      ],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/4"
@@ -1402,6 +1517,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1/2",
           "node": 1,
+          "passed": false,
           "ratios": [
             "1",
             "1/2"
@@ -1414,6 +1530,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2"
@@ -1424,6 +1541,7 @@
           "lhs_max_ratio": "1/2",
           "mid_diag_over_mark": "1/2",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2"
@@ -1443,26 +1561,41 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 1
+          "node": 1,
+          "passed": true
         }
       ],
       "type": "B2"
     },
     {
       "expected_root_count": 8,
-      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        }
+      ],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": false,
           "ratios": [
             "1/2",
             "1"
@@ -1473,6 +1606,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/4",
             "1"
@@ -1485,6 +1619,7 @@
           "lhs_max_ratio": "1/2",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2"
@@ -1495,6 +1630,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/2",
             "1"
@@ -1514,26 +1650,42 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 1
+          "node": 1,
+          "passed": true
         }
       ],
       "type": "C2"
     },
     {
       "expected_root_count": 18,
-      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "3/4",
+          "node": 2,
+          "passed": false,
+          "ratios": [
+            "1",
+            "1",
+            "3/4"
+          ],
+          "rhs_diag": "3/2"
+        }
+      ],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -1545,6 +1697,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -1556,6 +1709,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "3/4",
           "node": 2,
+          "passed": false,
           "ratios": [
             "1",
             "1",
@@ -1569,6 +1723,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -1580,6 +1735,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -1591,6 +1747,7 @@
           "lhs_max_ratio": "3/4",
           "mid_diag_over_mark": "3/4",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -1612,32 +1769,34 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "2/3",
           "S": "4/3",
           "det_ratio": "2/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         }
       ],
       "type": "B3"
     },
     {
       "expected_root_count": 18,
-      "green_ratio_failures_bourbaki_orientation": 2,
-      "green_ratio_failures_proof_convention": [],
-      "green_ratio_values_bourbaki_orientation": [
+      "green_ratio_failures_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": false,
           "ratios": [
             "1/2",
             "1/2",
@@ -1649,6 +1808,34 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "2"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -1660,6 +1847,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/4",
             "1/2",
@@ -1673,6 +1861,7 @@
           "lhs_max_ratio": "1/2",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -1684,6 +1873,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -1695,6 +1885,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -1716,32 +1907,50 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "2/3",
           "S": "4/3",
           "det_ratio": "2/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         }
       ],
       "type": "C3"
     },
     {
       "expected_root_count": 32,
-      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "1",
+          "node": 3,
+          "passed": false,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "1"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -1754,6 +1963,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -1766,6 +1976,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -1778,6 +1989,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "1",
           "node": 3,
+          "passed": false,
           "ratios": [
             "1",
             "1",
@@ -1792,6 +2004,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -1804,6 +2017,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -1816,6 +2030,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -1828,6 +2043,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -1851,38 +2067,41 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 3
+          "node": 3,
+          "passed": true
         }
       ],
       "type": "B4"
     },
     {
       "expected_root_count": 32,
-      "green_ratio_failures_bourbaki_orientation": 3,
-      "green_ratio_failures_proof_convention": [],
-      "green_ratio_values_bourbaki_orientation": [
+      "green_ratio_failures_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": false,
           "ratios": [
             "1/2",
             "1/2",
@@ -1895,6 +2114,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -1907,6 +2127,49 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3"
+          ],
+          "rhs_diag": "3"
+        }
+      ],
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -1919,6 +2182,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/4",
             "1/2",
@@ -1933,6 +2197,7 @@
           "lhs_max_ratio": "1/2",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -1945,6 +2210,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -1957,6 +2223,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -1969,6 +2236,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -1992,38 +2260,58 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 3
+          "node": 3,
+          "passed": true
         }
       ],
       "type": "C4"
     },
     {
       "expected_root_count": 50,
-      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "5/4",
+          "node": 4,
+          "passed": false,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/4"
+          ],
+          "rhs_diag": "5/2"
+        }
+      ],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -2037,6 +2325,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2050,6 +2339,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2063,6 +2353,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2076,6 +2367,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "5/4",
           "node": 4,
+          "passed": false,
           "ratios": [
             "1",
             "1",
@@ -2091,6 +2383,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -2104,6 +2397,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2117,6 +2411,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2130,6 +2425,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2143,6 +2439,7 @@
           "lhs_max_ratio": "5/4",
           "mid_diag_over_mark": "5/4",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -2168,44 +2465,48 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "2/5",
           "S": "8/5",
           "det_ratio": "2/5",
-          "node": 4
+          "node": 4,
+          "passed": true
         }
       ],
       "type": "B5"
     },
     {
       "expected_root_count": 50,
-      "green_ratio_failures_bourbaki_orientation": 4,
-      "green_ratio_failures_proof_convention": [],
-      "green_ratio_values_bourbaki_orientation": [
+      "green_ratio_failures_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": false,
           "ratios": [
             "1/2",
             "1/2",
@@ -2219,6 +2520,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -2232,6 +2534,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -2245,6 +2548,66 @@
           "lhs_max_ratio": "4",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "4"
+          ],
+          "rhs_diag": "4"
+        }
+      ],
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1",
+            "2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2",
+            "3"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "4",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -2258,6 +2621,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1/4",
             "1/2",
@@ -2273,6 +2637,7 @@
           "lhs_max_ratio": "1/2",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -2286,6 +2651,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -2299,6 +2665,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -2312,6 +2679,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -2325,6 +2693,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -2350,44 +2719,66 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "2/5",
           "S": "8/5",
           "det_ratio": "2/5",
-          "node": 4
+          "node": 4,
+          "passed": true
         }
       ],
       "type": "C5"
     },
     {
       "expected_root_count": 72,
-      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "5/2",
+          "mid_diag_over_mark": "3/2",
+          "node": 5,
+          "passed": false,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3/2"
+          ],
+          "rhs_diag": "3"
+        }
+      ],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -2402,6 +2793,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2416,6 +2808,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2430,6 +2823,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2444,6 +2838,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2458,6 +2853,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "3/2",
           "node": 5,
+          "passed": false,
           "ratios": [
             "1",
             "1",
@@ -2474,6 +2870,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -2488,6 +2885,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2502,6 +2900,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2516,6 +2915,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2530,6 +2930,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2544,6 +2945,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -2571,50 +2973,55 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "1/5",
           "S": "9/5",
           "det_ratio": "1/5",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 5
+          "node": 5,
+          "passed": true
         }
       ],
       "type": "B6"
     },
     {
       "expected_root_count": 72,
-      "green_ratio_failures_bourbaki_orientation": 5,
-      "green_ratio_failures_proof_convention": [],
-      "green_ratio_values_bourbaki_orientation": [
+      "green_ratio_failures_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": false,
           "ratios": [
             "1/2",
             "1/2",
@@ -2629,6 +3036,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -2643,6 +3051,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -2657,6 +3066,7 @@
           "lhs_max_ratio": "4",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -2671,6 +3081,85 @@
           "lhs_max_ratio": "5",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5"
+          ],
+          "rhs_diag": "5"
+        }
+      ],
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "4",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "4"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -2685,6 +3174,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/4",
             "1/2",
@@ -2701,6 +3191,7 @@
           "lhs_max_ratio": "1/2",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -2715,6 +3206,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -2729,6 +3221,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -2743,6 +3236,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -2757,6 +3251,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -2771,6 +3266,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -2798,50 +3294,74 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "1/5",
           "S": "9/5",
           "det_ratio": "1/5",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 5
+          "node": 5,
+          "passed": true
         }
       ],
       "type": "C6"
     },
     {
       "expected_root_count": 98,
-      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "7/4",
+          "node": 6,
+          "passed": false,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "7/4"
+          ],
+          "rhs_diag": "7/2"
+        }
+      ],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -2857,6 +3377,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2872,6 +3393,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2887,6 +3409,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2902,6 +3425,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2917,6 +3441,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2932,6 +3457,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "7/4",
           "node": 6,
+          "passed": false,
           "ratios": [
             "1",
             "1",
@@ -2949,6 +3475,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -2964,6 +3491,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2979,6 +3507,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -2994,6 +3523,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3009,6 +3539,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3024,6 +3555,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3039,6 +3571,7 @@
           "lhs_max_ratio": "7/4",
           "mid_diag_over_mark": "7/4",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -3068,56 +3601,62 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "1/5",
           "S": "9/5",
           "det_ratio": "1/5",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "1/6",
           "S": "11/6",
           "det_ratio": "1/6",
-          "node": 5
+          "node": 5,
+          "passed": true
         },
         {
           "2_minus_S": "2/7",
           "S": "12/7",
           "det_ratio": "2/7",
-          "node": 6
+          "node": 6,
+          "passed": true
         }
       ],
       "type": "B7"
     },
     {
       "expected_root_count": 98,
-      "green_ratio_failures_bourbaki_orientation": 6,
-      "green_ratio_failures_proof_convention": [],
-      "green_ratio_values_bourbaki_orientation": [
+      "green_ratio_failures_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": false,
           "ratios": [
             "1/2",
             "1/2",
@@ -3133,6 +3672,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -3148,6 +3688,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -3163,6 +3704,7 @@
           "lhs_max_ratio": "4",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -3178,6 +3720,7 @@
           "lhs_max_ratio": "5",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -3193,6 +3736,106 @@
           "lhs_max_ratio": "6",
           "mid_diag_over_mark": "3",
           "node": 5,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "6"
+          ],
+          "rhs_diag": "6"
+        }
+      ],
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "4",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "4"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "6",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -3208,6 +3851,7 @@
           "lhs_max_ratio": "7/2",
           "mid_diag_over_mark": "7/2",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1/4",
             "1/2",
@@ -3225,6 +3869,7 @@
           "lhs_max_ratio": "1/2",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -3240,6 +3885,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3255,6 +3901,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3270,6 +3917,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3285,6 +3933,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3300,6 +3949,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3315,6 +3965,7 @@
           "lhs_max_ratio": "7/2",
           "mid_diag_over_mark": "7/2",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3344,56 +3995,82 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "1/5",
           "S": "9/5",
           "det_ratio": "1/5",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "1/6",
           "S": "11/6",
           "det_ratio": "1/6",
-          "node": 5
+          "node": 5,
+          "passed": true
         },
         {
           "2_minus_S": "2/7",
           "S": "12/7",
           "det_ratio": "2/7",
-          "node": 6
+          "node": 6,
+          "passed": true
         }
       ],
       "type": "C7"
     },
     {
       "expected_root_count": 128,
-      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "7/2",
+          "mid_diag_over_mark": "2",
+          "node": 7,
+          "passed": false,
+          "ratios": [
+            "1",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "7/2",
+            "2"
+          ],
+          "rhs_diag": "4"
+        }
+      ],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -3410,6 +4087,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3426,6 +4104,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3442,6 +4121,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3458,6 +4138,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3474,6 +4155,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3490,6 +4172,7 @@
           "lhs_max_ratio": "7/2",
           "mid_diag_over_mark": "7/2",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3506,6 +4189,7 @@
           "lhs_max_ratio": "7/2",
           "mid_diag_over_mark": "2",
           "node": 7,
+          "passed": false,
           "ratios": [
             "1",
             "1",
@@ -3524,6 +4208,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -3540,6 +4225,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3556,6 +4242,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3572,6 +4259,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3588,6 +4276,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3604,6 +4293,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3620,6 +4310,7 @@
           "lhs_max_ratio": "7/2",
           "mid_diag_over_mark": "7/2",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -3636,6 +4327,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 7,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -3667,62 +4359,69 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "1/5",
           "S": "9/5",
           "det_ratio": "1/5",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "1/6",
           "S": "11/6",
           "det_ratio": "1/6",
-          "node": 5
+          "node": 5,
+          "passed": true
         },
         {
           "2_minus_S": "1/7",
           "S": "13/7",
           "det_ratio": "1/7",
-          "node": 6
+          "node": 6,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 7
+          "node": 7,
+          "passed": true
         }
       ],
       "type": "B8"
     },
     {
       "expected_root_count": 128,
-      "green_ratio_failures_bourbaki_orientation": 7,
-      "green_ratio_failures_proof_convention": [],
-      "green_ratio_values_bourbaki_orientation": [
+      "green_ratio_failures_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": false,
           "ratios": [
             "1/2",
             "1/2",
@@ -3739,6 +4438,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -3755,6 +4455,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -3771,6 +4472,7 @@
           "lhs_max_ratio": "4",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -3787,6 +4489,7 @@
           "lhs_max_ratio": "5",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -3803,6 +4506,7 @@
           "lhs_max_ratio": "6",
           "mid_diag_over_mark": "3",
           "node": 5,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -3819,6 +4523,129 @@
           "lhs_max_ratio": "7",
           "mid_diag_over_mark": "7/2",
           "node": 6,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "7/2",
+            "7"
+          ],
+          "rhs_diag": "7"
+        }
+      ],
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "1",
+          "mid_diag_over_mark": "1/2",
+          "node": 0,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1"
+          ],
+          "rhs_diag": "1"
+        },
+        {
+          "lhs_max_ratio": "2",
+          "mid_diag_over_mark": "1",
+          "node": 1,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "3",
+          "mid_diag_over_mark": "3/2",
+          "node": 2,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "3"
+          ],
+          "rhs_diag": "3"
+        },
+        {
+          "lhs_max_ratio": "4",
+          "mid_diag_over_mark": "2",
+          "node": 3,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "4"
+          ],
+          "rhs_diag": "4"
+        },
+        {
+          "lhs_max_ratio": "5",
+          "mid_diag_over_mark": "5/2",
+          "node": 4,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "5/2",
+            "5/2",
+            "5"
+          ],
+          "rhs_diag": "5"
+        },
+        {
+          "lhs_max_ratio": "6",
+          "mid_diag_over_mark": "3",
+          "node": 5,
+          "passed": false,
+          "ratios": [
+            "1/2",
+            "1",
+            "3/2",
+            "2",
+            "5/2",
+            "3",
+            "3",
+            "6"
+          ],
+          "rhs_diag": "6"
+        },
+        {
+          "lhs_max_ratio": "7",
+          "mid_diag_over_mark": "7/2",
+          "node": 6,
+          "passed": false,
           "ratios": [
             "1/2",
             "1",
@@ -3835,6 +4662,7 @@
           "lhs_max_ratio": "4",
           "mid_diag_over_mark": "4",
           "node": 7,
+          "passed": true,
           "ratios": [
             "1/4",
             "1/2",
@@ -3853,6 +4681,7 @@
           "lhs_max_ratio": "1/2",
           "mid_diag_over_mark": "1/2",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -3869,6 +4698,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3885,6 +4715,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3901,6 +4732,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3917,6 +4749,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3933,6 +4766,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3949,6 +4783,7 @@
           "lhs_max_ratio": "7/2",
           "mid_diag_over_mark": "7/2",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3965,6 +4800,7 @@
           "lhs_max_ratio": "4",
           "mid_diag_over_mark": "4",
           "node": 7,
+          "passed": true,
           "ratios": [
             "1/2",
             "1",
@@ -3996,62 +4832,71 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "1/5",
           "S": "9/5",
           "det_ratio": "1/5",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "1/6",
           "S": "11/6",
           "det_ratio": "1/6",
-          "node": 5
+          "node": 5,
+          "passed": true
         },
         {
           "2_minus_S": "1/7",
           "S": "13/7",
           "det_ratio": "1/7",
-          "node": 6
+          "node": 6,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 7
+          "node": 7,
+          "passed": true
         }
       ],
       "type": "C8"
     },
     {
       "expected_root_count": 24,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -4064,6 +4909,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4076,6 +4922,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4088,6 +4935,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4102,6 +4950,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -4114,6 +4963,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4126,6 +4976,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4138,6 +4989,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4161,38 +5013,43 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 3
+          "node": 3,
+          "passed": true
         }
       ],
       "type": "D4"
     },
     {
       "expected_root_count": 40,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -4206,6 +5063,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4219,6 +5077,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4232,6 +5091,7 @@
           "lhs_max_ratio": "5/4",
           "mid_diag_over_mark": "5/4",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4245,6 +5105,7 @@
           "lhs_max_ratio": "5/4",
           "mid_diag_over_mark": "5/4",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4260,6 +5121,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -4273,6 +5135,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4286,6 +5149,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4299,6 +5163,7 @@
           "lhs_max_ratio": "5/4",
           "mid_diag_over_mark": "5/4",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4312,6 +5177,7 @@
           "lhs_max_ratio": "5/4",
           "mid_diag_over_mark": "5/4",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4337,44 +5203,50 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "4/5",
           "S": "6/5",
           "det_ratio": "4/5",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "4/5",
           "S": "6/5",
           "det_ratio": "4/5",
-          "node": 4
+          "node": 4,
+          "passed": true
         }
       ],
       "type": "D5"
     },
     {
       "expected_root_count": 60,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -4389,6 +5261,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4403,6 +5276,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4417,6 +5291,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4431,6 +5306,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4445,6 +5321,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4461,6 +5338,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -4475,6 +5353,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4489,6 +5368,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4503,6 +5383,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4517,6 +5398,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4531,6 +5413,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4558,50 +5441,57 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "2/3",
           "S": "4/3",
           "det_ratio": "2/3",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "2/3",
           "S": "4/3",
           "det_ratio": "2/3",
-          "node": 5
+          "node": 5,
+          "passed": true
         }
       ],
       "type": "D6"
     },
     {
       "expected_root_count": 84,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -4617,6 +5507,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4632,6 +5523,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4647,6 +5539,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4662,6 +5555,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4677,6 +5571,7 @@
           "lhs_max_ratio": "7/4",
           "mid_diag_over_mark": "7/4",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4692,6 +5587,7 @@
           "lhs_max_ratio": "7/4",
           "mid_diag_over_mark": "7/4",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4709,6 +5605,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -4724,6 +5621,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4739,6 +5637,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4754,6 +5653,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4769,6 +5669,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4784,6 +5685,7 @@
           "lhs_max_ratio": "7/4",
           "mid_diag_over_mark": "7/4",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4799,6 +5701,7 @@
           "lhs_max_ratio": "7/4",
           "mid_diag_over_mark": "7/4",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4828,56 +5731,64 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "1/5",
           "S": "9/5",
           "det_ratio": "1/5",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "4/7",
           "S": "10/7",
           "det_ratio": "4/7",
-          "node": 5
+          "node": 5,
+          "passed": true
         },
         {
           "2_minus_S": "4/7",
           "S": "10/7",
           "det_ratio": "4/7",
-          "node": 6
+          "node": 6,
+          "passed": true
         }
       ],
       "type": "D7"
     },
     {
       "expected_root_count": 112,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -4894,6 +5805,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4910,6 +5822,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4926,6 +5839,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4942,6 +5856,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4958,6 +5873,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -4974,6 +5890,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -4990,6 +5907,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 7,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -5008,6 +5926,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/2",
@@ -5024,6 +5943,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -5040,6 +5960,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -5056,6 +5977,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -5072,6 +5994,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -5088,6 +6011,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -5104,6 +6028,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -5120,6 +6045,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 7,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -5151,62 +6077,71 @@
           "2_minus_S": "1",
           "S": "1",
           "det_ratio": "1",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/3",
           "S": "5/3",
           "det_ratio": "1/3",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "1/5",
           "S": "9/5",
           "det_ratio": "1/5",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "1/6",
           "S": "11/6",
           "det_ratio": "1/6",
-          "node": 5
+          "node": 5,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 6
+          "node": 6,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 7
+          "node": 7,
+          "passed": true
         }
       ],
       "type": "D8"
     },
     {
       "expected_root_count": 72,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "4/3",
           "mid_diag_over_mark": "4/3",
           "node": 0,
+          "passed": true,
           "ratios": [
             "4/3",
             "5/6",
@@ -5221,6 +6156,7 @@
           "lhs_max_ratio": "5/3",
           "mid_diag_over_mark": "5/3",
           "node": 1,
+          "passed": true,
           "ratios": [
             "5/3",
             "5/3",
@@ -5235,6 +6171,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "2",
             "2",
@@ -5249,6 +6186,7 @@
           "lhs_max_ratio": "5/3",
           "mid_diag_over_mark": "5/3",
           "node": 3,
+          "passed": true,
           "ratios": [
             "4/3",
             "4/3",
@@ -5263,6 +6201,7 @@
           "lhs_max_ratio": "4/3",
           "mid_diag_over_mark": "4/3",
           "node": 4,
+          "passed": true,
           "ratios": [
             "2/3",
             "2/3",
@@ -5277,6 +6216,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -5293,6 +6233,7 @@
           "lhs_max_ratio": "4/3",
           "mid_diag_over_mark": "4/3",
           "node": 0,
+          "passed": true,
           "ratios": [
             "4/3",
             "5/6",
@@ -5307,6 +6248,7 @@
           "lhs_max_ratio": "5/3",
           "mid_diag_over_mark": "5/3",
           "node": 1,
+          "passed": true,
           "ratios": [
             "5/3",
             "5/3",
@@ -5321,6 +6263,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "2",
             "2",
@@ -5335,6 +6278,7 @@
           "lhs_max_ratio": "5/3",
           "mid_diag_over_mark": "5/3",
           "node": 3,
+          "passed": true,
           "ratios": [
             "4/3",
             "4/3",
@@ -5349,6 +6293,7 @@
           "lhs_max_ratio": "4/3",
           "mid_diag_over_mark": "4/3",
           "node": 4,
+          "passed": true,
           "ratios": [
             "2/3",
             "2/3",
@@ -5363,6 +6308,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -5390,50 +6336,57 @@
           "2_minus_S": "3/4",
           "S": "5/4",
           "det_ratio": "3/4",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "3/10",
           "S": "17/10",
           "det_ratio": "3/10",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/6",
           "S": "11/6",
           "det_ratio": "1/6",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "3/10",
           "S": "17/10",
           "det_ratio": "3/10",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "3/4",
           "S": "5/4",
           "det_ratio": "3/4",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 5
+          "node": 5,
+          "passed": true
         }
       ],
       "type": "E6"
     },
     {
       "expected_root_count": 126,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -5449,6 +6402,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 1,
+          "passed": true,
           "ratios": [
             "3/2",
             "2",
@@ -5464,6 +6418,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 2,
+          "passed": true,
           "ratios": [
             "2",
             "8/3",
@@ -5479,6 +6434,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "3/2",
             "2",
@@ -5494,6 +6450,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1",
             "4/3",
@@ -5509,6 +6466,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/2",
             "2/3",
@@ -5524,6 +6482,7 @@
           "lhs_max_ratio": "7/4",
           "mid_diag_over_mark": "7/4",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1",
             "4/3",
@@ -5541,6 +6500,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -5556,6 +6516,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 1,
+          "passed": true,
           "ratios": [
             "3/2",
             "2",
@@ -5571,6 +6532,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 2,
+          "passed": true,
           "ratios": [
             "2",
             "8/3",
@@ -5586,6 +6548,7 @@
           "lhs_max_ratio": "5/2",
           "mid_diag_over_mark": "5/2",
           "node": 3,
+          "passed": true,
           "ratios": [
             "3/2",
             "2",
@@ -5601,6 +6564,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 4,
+          "passed": true,
           "ratios": [
             "1",
             "4/3",
@@ -5616,6 +6580,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 5,
+          "passed": true,
           "ratios": [
             "1/2",
             "2/3",
@@ -5631,6 +6596,7 @@
           "lhs_max_ratio": "7/4",
           "mid_diag_over_mark": "7/4",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1",
             "4/3",
@@ -5660,56 +6626,64 @@
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/6",
           "S": "11/6",
           "det_ratio": "1/6",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/12",
           "S": "23/12",
           "det_ratio": "1/12",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "2/15",
           "S": "28/15",
           "det_ratio": "2/15",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "2/3",
           "S": "4/3",
           "det_ratio": "2/3",
-          "node": 5
+          "node": 5,
+          "passed": true
         },
         {
           "2_minus_S": "2/7",
           "S": "12/7",
           "det_ratio": "2/7",
-          "node": 6
+          "node": 6,
+          "passed": true
         }
       ],
       "type": "E7"
     },
     {
       "expected_root_count": 240,
-      "green_ratio_failures_bourbaki_orientation": 0,
+      "green_ratio_failures_bourbaki_orientation": [],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 0,
+          "passed": true,
           "ratios": [
             "2",
             "7/4",
@@ -5726,6 +6700,7 @@
           "lhs_max_ratio": "7/2",
           "mid_diag_over_mark": "7/2",
           "node": 1,
+          "passed": true,
           "ratios": [
             "7/2",
             "7/2",
@@ -5742,6 +6717,7 @@
           "lhs_max_ratio": "5",
           "mid_diag_over_mark": "5",
           "node": 2,
+          "passed": true,
           "ratios": [
             "5",
             "5",
@@ -5758,6 +6734,7 @@
           "lhs_max_ratio": "4",
           "mid_diag_over_mark": "4",
           "node": 3,
+          "passed": true,
           "ratios": [
             "4",
             "4",
@@ -5774,6 +6751,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 4,
+          "passed": true,
           "ratios": [
             "3",
             "3",
@@ -5790,6 +6768,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 5,
+          "passed": true,
           "ratios": [
             "2",
             "2",
@@ -5806,6 +6785,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -5822,6 +6802,7 @@
           "lhs_max_ratio": "8/3",
           "mid_diag_over_mark": "8/3",
           "node": 7,
+          "passed": true,
           "ratios": [
             "5/2",
             "5/2",
@@ -5840,6 +6821,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 0,
+          "passed": true,
           "ratios": [
             "2",
             "7/4",
@@ -5856,6 +6838,7 @@
           "lhs_max_ratio": "7/2",
           "mid_diag_over_mark": "7/2",
           "node": 1,
+          "passed": true,
           "ratios": [
             "7/2",
             "7/2",
@@ -5872,6 +6855,7 @@
           "lhs_max_ratio": "5",
           "mid_diag_over_mark": "5",
           "node": 2,
+          "passed": true,
           "ratios": [
             "5",
             "5",
@@ -5888,6 +6872,7 @@
           "lhs_max_ratio": "4",
           "mid_diag_over_mark": "4",
           "node": 3,
+          "passed": true,
           "ratios": [
             "4",
             "4",
@@ -5904,6 +6889,7 @@
           "lhs_max_ratio": "3",
           "mid_diag_over_mark": "3",
           "node": 4,
+          "passed": true,
           "ratios": [
             "3",
             "3",
@@ -5920,6 +6906,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 5,
+          "passed": true,
           "ratios": [
             "2",
             "2",
@@ -5936,6 +6923,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 6,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -5952,6 +6940,7 @@
           "lhs_max_ratio": "8/3",
           "mid_diag_over_mark": "8/3",
           "node": 7,
+          "passed": true,
           "ratios": [
             "5/2",
             "5/2",
@@ -5983,62 +6972,69 @@
           "2_minus_S": "1/4",
           "S": "7/4",
           "det_ratio": "1/4",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/14",
           "S": "27/14",
           "det_ratio": "1/14",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/30",
           "S": "59/30",
           "det_ratio": "1/30",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/20",
           "S": "39/20",
           "det_ratio": "1/20",
-          "node": 3
+          "node": 3,
+          "passed": true
         },
         {
           "2_minus_S": "1/12",
           "S": "23/12",
           "det_ratio": "1/12",
-          "node": 4
+          "node": 4,
+          "passed": true
         },
         {
           "2_minus_S": "1/6",
           "S": "11/6",
           "det_ratio": "1/6",
-          "node": 5
+          "node": 5,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 6
+          "node": 6,
+          "passed": true
         },
         {
           "2_minus_S": "1/8",
           "S": "15/8",
           "det_ratio": "1/8",
-          "node": 7
+          "node": 7,
+          "passed": true
         }
       ],
       "type": "E8"
     },
     {
       "expected_root_count": 48,
-      "green_ratio_failures_bourbaki_orientation": 2,
-      "green_ratio_failures_proof_convention": [],
-      "green_ratio_values_bourbaki_orientation": [
+      "green_ratio_failures_bourbaki_orientation": [
         {
           "lhs_max_ratio": "4/3",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": false,
           "ratios": [
             "1",
             "3/4",
@@ -6051,6 +7047,36 @@
           "lhs_max_ratio": "8/3",
           "mid_diag_over_mark": "3/2",
           "node": 1,
+          "passed": false,
+          "ratios": [
+            "3/2",
+            "3/2",
+            "8/3",
+            "2"
+          ],
+          "rhs_diag": "6"
+        }
+      ],
+      "green_ratio_failures_proof_convention": [],
+      "green_ratio_values_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "4/3",
+          "mid_diag_over_mark": "1",
+          "node": 0,
+          "passed": false,
+          "ratios": [
+            "1",
+            "3/4",
+            "4/3",
+            "1"
+          ],
+          "rhs_diag": "2"
+        },
+        {
+          "lhs_max_ratio": "8/3",
+          "mid_diag_over_mark": "3/2",
+          "node": 1,
+          "passed": false,
           "ratios": [
             "3/2",
             "3/2",
@@ -6063,6 +7089,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -6075,6 +7102,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1/2",
             "1/2",
@@ -6089,6 +7117,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "3/4",
@@ -6101,6 +7130,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "3/2",
           "node": 1,
+          "passed": true,
           "ratios": [
             "3/2",
             "3/2",
@@ -6113,6 +7143,7 @@
           "lhs_max_ratio": "2",
           "mid_diag_over_mark": "2",
           "node": 2,
+          "passed": true,
           "ratios": [
             "2",
             "2",
@@ -6125,6 +7156,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 3,
+          "passed": true,
           "ratios": [
             "1",
             "1",
@@ -6148,38 +7180,55 @@
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/6",
           "S": "11/6",
           "det_ratio": "1/6",
-          "node": 1
+          "node": 1,
+          "passed": true
         },
         {
           "2_minus_S": "1/6",
           "S": "11/6",
           "det_ratio": "1/6",
-          "node": 2
+          "node": 2,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 3
+          "node": 3,
+          "passed": true
         }
       ],
       "type": "F4"
     },
     {
       "expected_root_count": 12,
-      "green_ratio_failures_bourbaki_orientation": 1,
+      "green_ratio_failures_bourbaki_orientation": [
+        {
+          "lhs_max_ratio": "3/2",
+          "mid_diag_over_mark": "2/3",
+          "node": 1,
+          "passed": false,
+          "ratios": [
+            "3/2",
+            "2/3"
+          ],
+          "rhs_diag": "2"
+        }
+      ],
       "green_ratio_failures_proof_convention": [],
       "green_ratio_values_bourbaki_orientation": [
         {
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1/3"
@@ -6190,6 +7239,7 @@
           "lhs_max_ratio": "3/2",
           "mid_diag_over_mark": "2/3",
           "node": 1,
+          "passed": false,
           "ratios": [
             "3/2",
             "2/3"
@@ -6202,6 +7252,7 @@
           "lhs_max_ratio": "1",
           "mid_diag_over_mark": "1",
           "node": 0,
+          "passed": true,
           "ratios": [
             "1",
             "1"
@@ -6212,6 +7263,7 @@
           "lhs_max_ratio": "2/3",
           "mid_diag_over_mark": "2/3",
           "node": 1,
+          "passed": true,
           "ratios": [
             "1/2",
             "2/3"
@@ -6231,23 +7283,25 @@
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 0
+          "node": 0,
+          "passed": true
         },
         {
           "2_minus_S": "1/2",
           "S": "3/2",
           "det_ratio": "1/2",
-          "node": 1
+          "node": 1,
+          "passed": true
         }
       ],
       "type": "G2"
     }
   ],
   "tested_claims": [
-    "root counts match expected finite root systems",
+    "root counts match expected finite systems",
     "Green ratio maximum lemma in proof Cartan convention",
     "Schur complement bound a^T B^-1 b < 2 for every deleted node"
   ],
   "total_types": 32,
-  "truth_label": "FINITE_CARTAN_EXACT_SAGE_TEST"
+  "truth_label": "PURE_PYTHON_EXACT_CARTAN_AUDIT"
 }

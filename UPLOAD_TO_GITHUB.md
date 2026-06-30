@@ -11,7 +11,7 @@
 5. Commit with this message:
 
 ```text
-Initial public referee package for OPAC-018 Green-Schur Bridge v1.3
+Initial public referee package for OPAC-018 Green-Schur Bridge v1.4
 ```
 
 ## Recommended local verification

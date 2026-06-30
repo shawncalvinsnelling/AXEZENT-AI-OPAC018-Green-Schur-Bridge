@@ -240,7 +240,7 @@ def main():
 
     report = {
         "truth_label": "FINITE_CARTAN_EXACT_SAGE_TEST",
-        "manuscript_version": "v1.3 full-audit package",
+        "manuscript_version": "v1.4 mainstream-hardening package",
         "receipt_level": "full detailed per-type audit",
         "scope": "A1-A8, B2-B8, C2-C8, D4-D8, E6, E7, E8, F4, G2",
         "important_convention": "Green ratio lemma should be stated using B = transpose(Bourbaki Cartan), i.e. B_ij=(beta_i,beta_j^vee). It fails in non-simply-laced types if the opposite convention is used.",

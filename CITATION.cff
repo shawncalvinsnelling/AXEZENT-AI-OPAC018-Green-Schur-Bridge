@@ -4,8 +4,8 @@ title: "The Green-Schur Bridge for OPAC-018: A Classification-Free Cartan-Schur 
 authors:
   - family-names: "Snelling"
     given-names: "Shawn Calvin"
-version: "1.3"
-date-released: "2026-06-29"
+version: "1.4"
+date-released: "2026-06-30"
 repository-code: "https://github.com/shawncalvinsnelling/AXEZENT-AI-OPAC018-Green-Schur-Bridge"
 keywords:
   - OPAC-018

@@ -1,24 +1,37 @@
 # Claims and Nonclaims
 
-## Explicit claims
+Author: Shawn Calvin Snelling  
+Affiliation: Axezent AI Research Lab
 
-- Green-Schur proof candidate for the OPAC-018 root-polytope projection bound.
-- Type-free local inequality route: `r_alpha < 2`.
-- Exact Sage audit over `A1-A8`, `B2-B8`, `C2-C8`, `D4-D8`, `E6`, `E7`, `E8`, `F4`, and `G2`.
-- Non-simply-laced safety is handled by the fixed convention `B_ij=(beta_i,beta_j^vee)`.
+## Explicit claim
+
+This package presents a complete OPAC-018 solution candidate manuscript. The manuscript proves the local inequality `r_alpha < 2` by a Green ratio maximum lemma and a Schur complement argument, then uses the Cellini-Marietti reduction framework to obtain the OPAC-018 projection bound `kappa(Phi,U) < 2`.
+
+## Verification assets
+
+The repository includes:
+
+- full detailed Sage-compatible exact arithmetic receipt;
+- pure-Python exact audit with no external math-library dependency;
+- counterexample stress-test protocol for out-of-scope matrices;
+- SHA-256 manifest and manifest verifier;
+- GitHub Actions workflow files.
+
+These are audit assets. They do not replace independent mathematical review.
 
 ## Required nonclaims
 
-- No claim of journal acceptance or independent peer-review acceptance.
-- No claim of P vs NP, the Riemann Hypothesis, the Traveling Salesman Problem, or any unrelated prize problem.
-- No claim that Sage replaces referee verification.
-- No claim that the manuscript has been historically accepted as a theorem.
+This package does not claim:
+
+- P vs NP;
+- the Riemann Hypothesis;
+- any Millennium Prize Problem;
+- the Traveling Salesman Problem;
+- a universal optimizer;
+- external peer-review acceptance;
+- arXiv acceptance;
+- historical recognition.
 
 ## Public status line
 
-Complete OPAC-018 solution candidate manuscript; exact Sage audit passed; external referee review pending.
-
-
-## v1.3 receipt note
-
-The packaged JSON receipt is the full detailed per-type audit file, not only a summary. It remains an exact-arithmetic audit asset and does not replace independent referee verification.
+Complete OPAC-018 solution candidate manuscript; exact arithmetic audits packaged; external referee review pending.

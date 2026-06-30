@@ -1,19 +1,31 @@
 # Repository File List
 
-- `.github/workflows/manifest-check.yml`
-- `.gitignore`
-- `CITATION.cff`
-- `CLAIMS_AND_NONCLAIMS.md`
-- `LICENSE`
-- `README.md`
-- `START_HERE.md`
-- `SUBMISSION_COVER_LETTER_DRAFT.md`
-- `UPLOAD_TO_GITHUB.md`
-- `paper/Green-Schur-Bridge-for-OPAC018-Complete-Referee-Edition-v1_3.pdf`
-- `paper/main.tex`
-- `receipts/README_RECEIPTS.md`
-- `receipts/SHA256SUMS.txt`
-- `receipts/opac18_green_schur_sage_results.json`
-- `receipts/opac18_green_schur_sage_results_FULL_DETAILED_v1_3.json`
-- `sage/opac18_green_schur_sage_test_fixed.sage`
-- `verify_manifest.py`
+.github/workflows/manifest-check.yml
+.github/workflows/python-exact-audit.yml
+.github/workflows/sage-audit-manual.yml
+.gitignore
+CITATION.cff
+CLAIMS_AND_NONCLAIMS.md
+LICENSE
+README.md
+REPOSITORY_FILE_LIST.md
+REPOSITORY_FILE_LIST.md.tmp
+START_HERE.md
+SUBMISSION_COVER_LETTER_DRAFT.md
+UPLOAD_TO_GITHUB.md
+counterexample_stress_test.py
+docs/ARXIV_SUBMISSION_PLAN.md
+docs/COUNTEREXAMPLE_STRESS_TEST_PROTOCOL.md
+docs/GEOMETRIC_DICTIONARY.md
+docs/INFINITE_FAMILY_SYMBOLIC_SUPPLEMENT.md
+paper/Green-Schur-Bridge-for-OPAC018-Complete-Referee-Edition-v1_4.pdf
+paper/main.tex
+pure_python_exact_audit.py
+receipts/README_RECEIPTS.md
+receipts/SHA256SUMS.txt
+receipts/counterexample_stress_test_results.json
+receipts/opac18_green_schur_pure_python_results.json
+receipts/opac18_green_schur_sage_results.json
+receipts/opac18_green_schur_sage_results_FULL_DETAILED_v1_4.json
+sage/opac18_green_schur_sage_test_fixed.sage
+verify_manifest.py

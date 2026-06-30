@@ -95,18 +95,18 @@
 \vspace{0.25cm}
 {\large Axezent AI Research Lab\par}
 \vfill
-{\large Complete Referee Edition v1.3 Full-Audit Package -- June 2026\par}
+{\large Complete Referee Edition v1.4 Mainstream-Hardening Package -- June 2026\par}
 \vspace{0.4cm}
 \statusbox{\textbf{Public status:} complete OPAC-018 solution candidate manuscript; exact-arithmetic audit passed; independent referee review pending.}
 \end{titlepage}
 
-\chapter*{Revision Certificate: What v1.3 Completes}
-\addcontentsline{toc}{chapter}{Revision Certificate: What v1.3 Completes}
-This edition is a cleaned and integrated referee package. It fixes the issues that could distract a referee before they reach the mathematical core and adds the full detailed per-type audit receipt required for repository review.
+\chapter*{Revision Certificate: What v1.4 Completes}
+\addcontentsline{toc}{chapter}{Revision Certificate: What v1.4 Completes}
+This edition is a cleaned and integrated referee package. It fixes the issues that could distract a referee before they reach the mathematical core, adds the full detailed per-type audit receipt required for repository review, and adds mainstream-hardening supplements: an infinite-family symbolic appendix, a counterexample stress-test protocol, a geometric dictionary, a pure-Python independent audit, and GitHub Actions automation.
 
 \begin{longtable}{p{0.33\textwidth}p{0.57\textwidth}}
 \toprule
-\textbf{Item} & \textbf{v1.3 correction}\\
+\textbf{Item} & \textbf{v1.4 correction}\\
 \midrule
 Author line & Uses \textbf{Shawn Calvin Snelling} only. No title prefix is used anywhere in the manuscript or repository package.\\
 Opening pages & Removes the separate plain-text addendum style and integrates the transfer theorem, $E_\varepsilon$ convention, reducible reduction, and $M$-matrix facts into the main LaTeX body.\\
@@ -116,6 +116,7 @@ Symmetrizability & Uses positive determinants of symmetrizable finite-type Carta
 Edge handling & Uses the robust inequality $\sum_\varepsilon a_\varepsilon b_\varepsilon G_{\varepsilon\varepsilon}\le a^T B^{-1}b$ so hidden off-diagonal support cannot be challenged.\\
 Repository verification & Adds a manifest verifier that actually compares hashes against \texttt{receipts/SHA256SUMS.txt}.\\
 Full audit JSON & Replaces the short Sage summary receipt with a detailed per-type JSON file containing all tested systems, highest-root marks, Green-ratio values, Schur complement values, and failure lists.\\
+Mainstream hardening & Adds symbolic infinite-family notes, scope stress tests, a geometric dictionary, a pure-Python independent audit, and CI workflows.\\
 Truth boundary & Keeps public wording at solution candidate / external review pending until independent review occurs.\\
 \bottomrule
 \end{longtable}
@@ -765,17 +766,85 @@ A referee should verify the following checkpoints.
 \chapter{Public Summary}
 Shawn Calvin Snelling presents a \GS{} Cartan proof candidate of the OPAC-018 root-polytope projection bound. The proof replaces the case-by-case finite-root-system comparison with a uniform inverse-Cartan ratio inequality and a Schur complement argument. The finite Cartan core has been exact-audited in Sage with 32 tested finite Cartan cases and zero failures. External referee review remains pending.
 
+
+\chapter{Mainstream-Hardening Addendum}
+This addendum records the final reviewer-facing assets added in v1.4. None of these additions replaces the proof in the main text. Their purpose is to make the package easier for mainstream reviewers to test, falsify, and reproduce.
+
+\section*{Infinite-family symbolic supplement}
+The proof is not an induction over classical families. It is a uniform Cartan--Schur argument. Still, the repository includes
+\begin{center}\fbox{\texttt{docs/INFINITE\_FAMILY\_SYMBOLIC\_SUPPLEMENT.md}}\end{center}
+which expands the determinant recurrences for $A_n$, $B_n$, $C_n$, and $D_n$ and explains why the Schur complement bound does not deteriorate as the rank increases.
+
+For example, the type $A_n$ determinant satisfies
+\[
+D_n=2D_{n-1}-D_{n-2},\qquad D_0=1,\quad D_1=2,
+\]
+so $D_n=n+1$. The type $A_n$ inverse formula
+\[
+(A_n^{-1})_{ij}=\frac{\min(i,j)(n+1-\max(i,j))}{n+1}
+\]
+shows directly that the maximum entry in row $e$ occurs at the diagonal. This gives an explicit infinite-family sanity check for the Green ratio in type $A$.
+
+\section*{Counterexample and scope stress tests}
+The repository includes
+\begin{center}\fbox{\texttt{counterexample\_stress\_test.py}}\end{center}
+This script deliberately tests matrices outside the theorem's hypotheses. It documents failures caused by wrong orientation, singular affine-like matrices, indefinite distorted matrices, and violations of the Cartan $Z$-matrix sign condition. The goal is not to broaden the theorem; it is to show exactly where the proof's hypotheses are used.
+
+\section*{Geometric dictionary}
+The repository includes
+\begin{center}\fbox{\texttt{docs/GEOMETRIC\_DICTIONARY.md}}\end{center}
+This file maps the algebraic objects $G=B^{-1}$, $c_\varepsilon$, $r_\alpha$, and $a^TB^{-1}b$ back to the convex-geometric containment statement. It also gives a small $A_2$ projection example where $\kappa(A_2,U)=1<2$.
+
+\section*{Independent non-Sage audit}
+The repository includes
+\begin{center}\fbox{\texttt{pure\_python\_exact\_audit.py}}\end{center}
+This audit uses only Python's standard library and \texttt{fractions.Fraction}. It does not import Sage, NumPy, SymPy, or any root-system library. It rebuilds the Cartan matrices, regenerates roots by reflections, computes highest-root marks, inverts matrices exactly, and checks the Green-ratio and Schur-complement inequalities.
+
+The packaged result is
+\begin{center}\fbox{\texttt{receipts/opac18\_green\_schur\_pure\_python\_results.json}}\end{center}
+with status
+\begin{lstlisting}[style=sage]
+{
+  "truth_label": "PURE_PYTHON_EXACT_CARTAN_AUDIT",
+  "passed": true,
+  "total_types": 32,
+  "failures": []
+}
+\end{lstlisting}
+
+\section*{Continuous integration}
+The repository includes GitHub Actions workflows:
+\begin{lstlisting}[style=sage]
+.github/workflows/manifest-check.yml
+.github/workflows/python-exact-audit.yml
+.github/workflows/sage-audit-manual.yml
+\end{lstlisting}
+The manifest and pure-Python audits run on push and pull request. The Sage audit is provided as a manual workflow because installing Sage in CI can be slow; it remains fully reproducible from the repository.
+
+\section*{arXiv preparation note}
+The repository includes
+\begin{center}\fbox{\texttt{docs/ARXIV\_SUBMISSION\_PLAN.md}}\end{center}
+No arXiv identifier is claimed in this package. The recommended public sequence is: GitHub repository, independent review circulation, arXiv submission if accepted by arXiv moderation/endorsement requirements, then journal submission.
+
 \chapter{Repository Protocol}
 The referee package accompanying this edition contains the manuscript PDF, the fixed Sage exact-arithmetic audit, the JSON audit result, a SHA-256 manifest, public claims/nonclaims, and a journal cover letter draft.
 
 \section*{Required repository layout}
 \begin{lstlisting}[style=sage]
 AXEZENT-AI-OPAC018-Green-Schur-Bridge/
-  paper/Green-Schur-Bridge-for-OPAC018-Complete-Referee-Edition-v1_3.pdf
+  paper/Green-Schur-Bridge-for-OPAC018-Complete-Referee-Edition-v1_4.pdf
   paper/main.tex
   sage/opac18_green_schur_sage_test_fixed.sage
   receipts/opac18_green_schur_sage_results.json
+  receipts/opac18_green_schur_pure_python_results.json
+  receipts/counterexample_stress_test_results.json
   receipts/SHA256SUMS.txt
+  pure_python_exact_audit.py
+  counterexample_stress_test.py
+  docs/INFINITE_FAMILY_SYMBOLIC_SUPPLEMENT.md
+  docs/GEOMETRIC_DICTIONARY.md
+  docs/COUNTEREXAMPLE_STRESS_TEST_PROTOCOL.md
+  docs/ARXIV_SUBMISSION_PLAN.md
   README.md
   CLAIMS_AND_NONCLAIMS.md
   SUBMISSION_COVER_LETTER_DRAFT.md
@@ -893,7 +962,7 @@ Suggested public repository name:
 Suggested layout:
 \begin{lstlisting}[style=sage]
 paper/main.tex
-paper/Green-Schur-Bridge-for-OPAC018-Complete-Referee-Edition-v1_3.pdf
+paper/Green-Schur-Bridge-for-OPAC018-Complete-Referee-Edition-v1_4.pdf
 sage/opac18_green_schur_sage_test_fixed.sage
 receipts/opac18_green_schur_sage_results.json
 receipts/SHA256SUMS.txt

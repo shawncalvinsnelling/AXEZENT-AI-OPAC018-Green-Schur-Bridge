@@ -1,0 +1,226 @@
+{
+  "all_expected_scope_failures_documented": true,
+  "non_crystallographic_notes": [
+    {
+      "lesson": "H3 and H4 involve irrational Coxeter data and do not supply integer crystallographic Cartan matrices. They are useful stress examples for scope, but not counterexamples to the OPAC-018 crystallographic theorem.",
+      "name": "H3_H4_non_crystallographic_note",
+      "status": "not a crystallographic Cartan test"
+    }
+  ],
+  "purpose": "document theorem scope and failure modes outside finite crystallographic Cartan hypotheses",
+  "tests": [
+    {
+      "expected": "pass",
+      "green_check": {
+        "failures": [],
+        "passed": true,
+        "rows": [
+          {
+            "lhs": "1",
+            "mid": "1",
+            "node": 0,
+            "passed": true,
+            "ratios": [
+              "1",
+              "1/2",
+              "1/2"
+            ],
+            "rhs": "1"
+          },
+          {
+            "lhs": "1",
+            "mid": "1",
+            "node": 1,
+            "passed": true,
+            "ratios": [
+              "1",
+              "1",
+              "1"
+            ],
+            "rhs": "2"
+          },
+          {
+            "lhs": "3/4",
+            "mid": "3/4",
+            "node": 2,
+            "passed": true,
+            "ratios": [
+              "1/2",
+              "1/2",
+              "3/4"
+            ],
+            "rhs": "3/2"
+          }
+        ]
+      },
+      "lesson": "Inside the theorem scope: finite crystallographic Cartan matrix in proof row convention.",
+      "name": "valid_B3_proof_orientation",
+      "scope_diagnostics": {
+        "determinant": "2",
+        "integer_entries": true,
+        "positive_diagnostic_principal_dets": true,
+        "z_matrix": true
+      }
+    },
+    {
+      "expected": "may_fail",
+      "green_check": {
+        "failures": [
+          {
+            "lhs": "1",
+            "mid": "3/4",
+            "node": 2,
+            "passed": false,
+            "ratios": [
+              "1",
+              "1",
+              "3/4"
+            ],
+            "rhs": "3/2"
+          }
+        ],
+        "passed": false,
+        "rows": [
+          {
+            "lhs": "1",
+            "mid": "1",
+            "node": 0,
+            "passed": true,
+            "ratios": [
+              "1",
+              "1/2",
+              "1/4"
+            ],
+            "rhs": "1"
+          },
+          {
+            "lhs": "1",
+            "mid": "1",
+            "node": 1,
+            "passed": true,
+            "ratios": [
+              "1",
+              "1",
+              "1/2"
+            ],
+            "rhs": "2"
+          },
+          {
+            "lhs": "1",
+            "mid": "3/4",
+            "node": 2,
+            "passed": false,
+            "ratios": [
+              "1",
+              "1",
+              "3/4"
+            ],
+            "rhs": "3/2"
+          }
+        ]
+      },
+      "lesson": "Demonstrates why B_ij=(beta_i,beta_j^vee) is locked; transposition can break row inequalities.",
+      "name": "wrong_orientation_B3_bourbaki_for_row_proof",
+      "scope_diagnostics": {
+        "determinant": "2",
+        "integer_entries": true,
+        "positive_diagnostic_principal_dets": true,
+        "z_matrix": true
+      }
+    },
+    {
+      "expected": "out_of_scope",
+      "green_check": {
+        "failures": [],
+        "passed": true,
+        "rows": [
+          {
+            "lhs": "-2/5",
+            "mid": "-2/5",
+            "node": 0,
+            "passed": true,
+            "ratios": [
+              "-2/5",
+              "-3/5"
+            ],
+            "rhs": "-2/5"
+          },
+          {
+            "lhs": "-2/5",
+            "mid": "-2/5",
+            "node": 1,
+            "passed": true,
+            "ratios": [
+              "-3/5",
+              "-2/5"
+            ],
+            "rhs": "-2/5"
+          }
+        ]
+      },
+      "lesson": "Not finite type: determinant is negative, so Schur positivity and M-matrix inverse positivity do not apply.",
+      "name": "distorted_indefinite_two_node_matrix",
+      "scope_diagnostics": {
+        "determinant": "-5",
+        "integer_entries": true,
+        "positive_diagnostic_principal_dets": false,
+        "z_matrix": true
+      }
+    },
+    {
+      "expected": "out_of_scope",
+      "green_check": {
+        "error": "singular",
+        "passed": false
+      },
+      "lesson": "Singular affine-like boundary: inverse does not exist; theorem assumes finite type.",
+      "name": "singular_affine_like_two_node_matrix",
+      "scope_diagnostics": {
+        "determinant": "0",
+        "integer_entries": true,
+        "positive_diagnostic_principal_dets": false,
+        "z_matrix": true
+      }
+    },
+    {
+      "expected": "out_of_scope",
+      "green_check": {
+        "failures": [],
+        "passed": true,
+        "rows": [
+          {
+            "lhs": "2/5",
+            "mid": "2/5",
+            "node": 0,
+            "passed": true,
+            "ratios": [
+              "2/5",
+              "-1/5"
+            ],
+            "rhs": "2/5"
+          },
+          {
+            "lhs": "2/5",
+            "mid": "2/5",
+            "node": 1,
+            "passed": true,
+            "ratios": [
+              "1/5",
+              "2/5"
+            ],
+            "rhs": "2/5"
+          }
+        ]
+      },
+      "lesson": "Not a Cartan Z-matrix: off-diagonal sign hypothesis is violated.",
+      "name": "positive_off_diagonal_not_z_matrix",
+      "scope_diagnostics": {
+        "determinant": "5",
+        "integer_entries": true,
+        "positive_diagnostic_principal_dets": true,
+        "z_matrix": false
+      }
+    }
+  ],
+  "truth_label": "COUNTEREXAMPLE_STRESS_TEST"
+}
