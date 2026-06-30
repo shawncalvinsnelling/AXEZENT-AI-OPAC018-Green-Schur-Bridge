@@ -1,0 +1,18 @@
+name: Pure Python Exact Audit
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pure-python-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pure Python exact audit
+        run: python pure_python_exact_audit.py
+      - name: Run counterexample stress tests
+        run: python counterexample_stress_test.py
+      - name: Verify SHA-256 manifest
+        run: python verify_manifest.py
